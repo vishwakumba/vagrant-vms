@@ -1,0 +1,24 @@
+Vagrant.configure("2") do |config|
+  config.ssh.insert_key = false
+  config.vm.box = "ubuntu/trusty64"
+
+  config.vm.define "my-ubuntu-email-vm" 
+  config.vm.hostname = "my-ubuntu-email-vm.neverland.co.uk" 
+
+  config.vm.network "private_network", ip: "192.168.112.112"
+ 
+  #This is to suppress the warning message in Vagrant "stdin: is not a tty"
+  #This warning still seems to appear once with this fix
+  config.vm.provision "shell", inline: "whoami;sed -i '/mesg n/d' /root/.profile"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 512 
+    vb.cpus = 1 
+    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+   end
+
+  config.vm.provision "shell", inline: <<-SHELL
+    echo "Hello, Welcome to your new Ubuntu-Trusty Email Vagrant VM" 
+   SHELL
+end
+

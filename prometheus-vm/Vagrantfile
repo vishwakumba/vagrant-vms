@@ -1,0 +1,21 @@
+Vagrant.configure("2") do |config|
+  config.ssh.insert_key = false
+  config.vm.box = "puppetlabs/centos-7.2-64-nocm"
+
+  config.vm.define "my-prometheus-vm" 
+  config.vm.hostname = "my-prometheus-vm.neverland.co.uk" 
+
+  config.vm.network "private_network", ip: "192.168.10.170"
+  config.vm.provision "shell", inline: "systemctl restart network"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 1024 
+    vb.cpus = 1 
+    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+   end
+
+  config.vm.provision "shell", inline: <<-SHELL
+    echo "Hello, Welcome to your new Prometheus Vagrant VM" 
+   SHELL
+end
+

@@ -1,0 +1,12 @@
+==> Starting Serf agent...
+==> Starting Serf agent RPC...
+==> Serf agent running!
+         Node name: 'gysp-il2-prod-kong01.itsprod.net_0.0.0.0:7946_7a0cdfed17a84a5baeabcfa1f3c56e9e'
+         Bind addr: '0.0.0.0:7946'
+          RPC addr: '127.0.0.1:7373'
+         Encrypted: false
+          Snapshot: false
+           Profile: wan
+
+==> Log data will now stream in as it occurs:
+

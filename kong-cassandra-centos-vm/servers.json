@@ -1,0 +1,24 @@
+[
+    {
+        "name": "myclient",
+        "hostname": "myclient.myworld.net",
+        "mem": 512,
+        "cpu": 1,
+        "ip": "192.168.165.120"
+    },
+    {
+        "name": "mykong",
+        "hostname": "mykong.myworld.net",
+        "mem": 1024,
+        "cpu": 1,
+        "ip": "192.168.165.121"
+    },
+    {
+        "name": "myserver",
+        "hostname": "myserver.myworld.net",
+        "mem": 512,
+        "cpu": 1,
+        "ip": "192.168.165.122"
+    }
+]
+

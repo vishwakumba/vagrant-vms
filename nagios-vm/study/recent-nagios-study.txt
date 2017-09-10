@@ -1,0 +1,673 @@
+vishwa.kumba@vishwa-macbook:junk$ curl -XGET "http://nagios.myworld.net/nagiosxi/api/v1/objects/hostgroupmembers?apikey=TtoNJuEDYS4ZQrTTfZId5lucr6dgrZpFtQIcECOSq9ShTLq82oFmN9Suu5Og4dUQ&pretty=1&hostgroup_name=linux-servers"
+{
+    "hostgrouplist": {
+        "recordcount": "2",
+        "hostgroup": {
+            "@attributes": {
+                "id": "144"
+            },
+            "instance_id": "1",
+            "hostgroup_name": "linux-servers",
+            "members": {
+                "host": [
+                    {
+                        "@attributes": {
+                            "id": "143"
+                        },
+                        "host_name": "localhost"
+                    },
+                    {
+                        "@attributes": {
+                            "id": "157"
+                        },
+                        "host_name": "web.myworld.net"
+                    }
+                ]
+            }
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------
+
+vishwa.kumba@vishwa-macbook:junk$ curl -XGET "http://nagios.myworld.net/nagiosxi/api/v1/objects/servicestatus?apikey=TtoNJuEDYS4ZQrTTfZId5lucr6dgrZpFtQIcECOSq9ShTLq82oFmN9Suu5Og4dUQ&pretty=1&host_name=database.myworld.net" > /tmp/out.txt
+{
+    "servicestatuslist": {
+        "recordcount": "7",
+        "servicestatus": [
+            {
+                "@attributes": {
+                    "id": "360"
+                },
+                "instance_id": "1",
+                "service_id": "170",
+                "host_id": "169",
+                "host_name": "database.myworld.net",
+                "host_alias": "database.myworld.net",
+                "name": "\/ Disk Usage",
+                "host_display_name": "",
+                "host_address": "192.168.240.13",
+                "display_name": "\/ Disk Usage",
+                "status_update_time": "2017-08-13 01:03:42",
+                "status_text": "DISK OK - free space: \/ 17478 MB (92% inode=99%):",
+                "status_text_long": "",
+                "current_state": "0",
+                "performance_data": "\/=1419MB;15118;17008;0;18898",
+                "should_be_scheduled": "1",
+                "check_type": "0",
+                "last_state_change": "2017-08-12 22:24:07",
+                "last_hard_state_change": "2017-08-12 22:24:07",
+                "last_hard_state": "0",
+                "last_time_ok": "2017-08-13 01:03:42",
+                "last_time_warning": "1970-01-01 01:00:00",
+                "last_time_critical": "1970-01-01 01:00:00",
+                "last_time_unknown": "1970-01-01 01:00:00",
+                "last_notification": "1970-01-01 01:00:00",
+                "next_notification": "1970-01-01 01:00:00",
+                "no_more_notifications": "0",
+                "acknowledgement_type": "0",
+                "current_notification_number": "0",
+                "process_performance_data": "1",
+                "obsess_over_service": "1",
+                "event_handler_enabled": "1",
+                "modified_service_attributes": "0",
+                "event_handler": "",
+                "check_command": "check_nrpe!check_disk!-a &apos;-w 20% -c 10% -p \/&apos;",
+                "normal_check_interval": "1",
+                "retry_check_interval": "1",
+                "check_timeperiod_id": "131",
+                "icon_image": "",
+                "icon_image_alt": "",
+                "has_been_checked": "1",
+                "current_check_attempt": "1",
+                "max_check_attempts": "5",
+                "last_check": "2017-08-13 01:03:42",
+                "next_check": "2017-08-13 01:04:42",
+                "state_type": "1",
+                "notifications_enabled": "1",
+                "problem_acknowledged": "0",
+                "flap_detection_enabled": "1",
+                "is_flapping": "0",
+                "percent_state_change": "0",
+                "latency": "0",
+                "execution_time": "0.01375",
+                "scheduled_downtime_depth": "0",
+                "passive_checks_enabled": "1",
+                "active_checks_enabled": "1"
+            },
+            {
+                "@attributes": {
+                    "id": "361"
+                },
+                "instance_id": "1",
+                "service_id": "178",
+                "host_id": "169",
+                "host_name": "database.myworld.net",
+                "host_alias": "database.myworld.net",
+                "name": "CPU Stats",
+                "host_display_name": "",
+                "host_address": "192.168.240.13",
+                "display_name": "CPU Stats",
+                "status_update_time": "2017-08-13 01:04:19",
+                "status_text": "CPU STATISTICS OK: user=0.00% system=0.00% iowait=0.00% idle=100.00%",
+                "status_text_long": "",
+                "current_state": "0",
+                "performance_data": "user=0.0% system=0.0% iowait=0.0%;85;95 idle=100.00%",
+                "should_be_scheduled": "1",
+                "check_type": "0",
+                "last_state_change": "2017-08-12 22:24:26",
+                "last_hard_state_change": "2017-08-12 22:24:26",
+                "last_hard_state": "0",
+                "last_time_ok": "2017-08-13 01:04:01",
+                "last_time_warning": "1970-01-01 01:00:00",
+                "last_time_critical": "1970-01-01 01:00:00",
+                "last_time_unknown": "1970-01-01 01:00:00",
+                "last_notification": "1970-01-01 01:00:00",
+                "next_notification": "1970-01-01 01:00:00",
+                "no_more_notifications": "0",
+                "acknowledgement_type": "0",
+                "current_notification_number": "0",
+                "process_performance_data": "1",
+                "obsess_over_service": "1",
+                "event_handler_enabled": "1",
+                "modified_service_attributes": "0",
+                "event_handler": "",
+                "check_command": "check_nrpe!check_cpu_stats!-a &apos;-w 85 -c 95&apos;",
+                "normal_check_interval": "1",
+                "retry_check_interval": "1",
+                "check_timeperiod_id": "131",
+                "icon_image": "",
+                "icon_image_alt": "",
+                "has_been_checked": "1",
+                "current_check_attempt": "1",
+                "max_check_attempts": "5",
+                "last_check": "2017-08-13 01:04:01",
+                "next_check": "2017-08-13 01:05:00",
+                "state_type": "1",
+                "notifications_enabled": "1",
+                "problem_acknowledged": "0",
+                "flap_detection_enabled": "1",
+                "is_flapping": "0",
+                "percent_state_change": "0",
+                "latency": "0",
+                "execution_time": "5.03646",
+                "scheduled_downtime_depth": "0",
+                "passive_checks_enabled": "1",
+                "active_checks_enabled": "1"
+            },
+            {
+                "@attributes": {
+                    "id": "362"
+                },
+                "instance_id": "1",
+                "service_id": "179",
+                "host_id": "169",
+                "host_name": "database.myworld.net",
+                "host_alias": "database.myworld.net",
+                "name": "Load",
+                "host_display_name": "",
+                "host_address": "192.168.240.13",
+                "display_name": "Load",
+                "status_update_time": "2017-08-13 01:04:19",
+                "status_text": "OK - load average: 0.00, 0.01, 0.05",
+                "status_text_long": "",
+                "current_state": "0",
+                "performance_data": "load1=0.000;15.000;30.000;0; load5=0.010;10.000;20.000;0; load15=0.050;5.000;10.000;0;",
+                "should_be_scheduled": "1",
+                "check_type": "0",
+                "last_state_change": "2017-08-12 22:24:42",
+                "last_hard_state_change": "2017-08-12 22:24:42",
+                "last_hard_state": "0",
+                "last_time_ok": "2017-08-13 01:04:19",
+                "last_time_warning": "1970-01-01 01:00:00",
+                "last_time_critical": "1970-01-01 01:00:00",
+                "last_time_unknown": "1970-01-01 01:00:00",
+                "last_notification": "1970-01-01 01:00:00",
+                "next_notification": "1970-01-01 01:00:00",
+                "no_more_notifications": "0",
+                "acknowledgement_type": "0",
+                "current_notification_number": "0",
+                "process_performance_data": "1",
+                "obsess_over_service": "1",
+                "event_handler_enabled": "1",
+                "modified_service_attributes": "0",
+                "event_handler": "",
+                "check_command": "check_nrpe!check_load!-a &apos;-w 15,10,5 -c 30,20,10&apos;",
+                "normal_check_interval": "1",
+                "retry_check_interval": "1",
+                "check_timeperiod_id": "131",
+                "icon_image": "",
+                "icon_image_alt": "",
+                "has_been_checked": "1",
+                "current_check_attempt": "1",
+                "max_check_attempts": "5",
+                "last_check": "2017-08-13 01:04:19",
+                "next_check": "2017-08-13 01:05:19",
+                "state_type": "1",
+                "notifications_enabled": "1",
+                "problem_acknowledged": "0",
+                "flap_detection_enabled": "1",
+                "is_flapping": "0",
+                "percent_state_change": "0",
+                "latency": "0",
+                "execution_time": "0.01655",
+                "scheduled_downtime_depth": "0",
+                "passive_checks_enabled": "1",
+                "active_checks_enabled": "1"
+            },
+            {
+                "@attributes": {
+                    "id": "363"
+                },
+                "instance_id": "1",
+                "service_id": "180",
+                "host_id": "169",
+                "host_name": "database.myworld.net",
+                "host_alias": "database.myworld.net",
+                "name": "Memory Usage",
+                "host_display_name": "",
+                "host_address": "192.168.240.13",
+                "display_name": "Memory Usage",
+                "status_update_time": "2017-08-13 01:04:19",
+                "status_text": "OK - 400 \/ 489 MB (81%) Free Memory, Used: 87 MB, Shared: 7 MB, Buffers + Cached: 386 MB",
+                "status_text_long": "",
+                "current_state": "0",
+                "performance_data": "total=489MB free=400MB used=87MB shared=7MB buffers_and_cached=386MB",
+                "should_be_scheduled": "1",
+                "check_type": "0",
+                "last_state_change": "2017-08-12 22:24:20",
+                "last_hard_state_change": "2017-08-12 22:24:20",
+                "last_hard_state": "0",
+                "last_time_ok": "2017-08-13 01:03:54",
+                "last_time_warning": "1970-01-01 01:00:00",
+                "last_time_critical": "1970-01-01 01:00:00",
+                "last_time_unknown": "1970-01-01 01:00:00",
+                "last_notification": "1970-01-01 01:00:00",
+                "next_notification": "1970-01-01 01:00:00",
+                "no_more_notifications": "0",
+                "acknowledgement_type": "0",
+                "current_notification_number": "0",
+                "process_performance_data": "1",
+                "obsess_over_service": "1",
+                "event_handler_enabled": "1",
+                "modified_service_attributes": "0",
+                "event_handler": "",
+                "check_command": "check_nrpe!check_mem!-a &apos;-w 20 -c 10&apos;",
+                "normal_check_interval": "1",
+                "retry_check_interval": "1",
+                "check_timeperiod_id": "131",
+                "icon_image": "",
+                "icon_image_alt": "",
+                "has_been_checked": "1",
+                "current_check_attempt": "1",
+                "max_check_attempts": "5",
+                "last_check": "2017-08-13 01:03:54",
+                "next_check": "2017-08-13 01:04:53",
+                "state_type": "1",
+                "notifications_enabled": "1",
+                "problem_acknowledged": "0",
+                "flap_detection_enabled": "1",
+                "is_flapping": "0",
+                "percent_state_change": "0",
+                "latency": "0",
+                "execution_time": "0.03602",
+                "scheduled_downtime_depth": "0",
+                "passive_checks_enabled": "1",
+                "active_checks_enabled": "1"
+            },
+            {
+                "@attributes": {
+                    "id": "364"
+                },
+                "instance_id": "1",
+                "service_id": "181",
+                "host_id": "169",
+                "host_name": "database.myworld.net",
+                "host_alias": "database.myworld.net",
+                "name": "Ping",
+                "host_display_name": "",
+                "host_address": "192.168.240.13",
+                "display_name": "Ping",
+                "status_update_time": "2017-08-13 01:04:19",
+                "status_text": "OK - 192.168.240.13: rta 0.251ms, lost 0%",
+                "status_text_long": "",
+                "current_state": "0",
+                "performance_data": "rta=0.251ms;3000.000;5000.000;0; pl=0%;80;100;; rtmax=0.331ms;;;; rtmin=0.222ms;;;;",
+                "should_be_scheduled": "1",
+                "check_type": "0",
+                "last_state_change": "2017-08-12 22:24:05",
+                "last_hard_state_change": "2017-08-12 22:24:05",
+                "last_hard_state": "0",
+                "last_time_ok": "2017-08-13 01:03:40",
+                "last_time_warning": "1970-01-01 01:00:00",
+                "last_time_critical": "1970-01-01 01:00:00",
+                "last_time_unknown": "1970-01-01 01:00:00",
+                "last_notification": "1970-01-01 01:00:00",
+                "next_notification": "1970-01-01 01:00:00",
+                "no_more_notifications": "0",
+                "acknowledgement_type": "0",
+                "current_notification_number": "0",
+                "process_performance_data": "1",
+                "obsess_over_service": "1",
+                "event_handler_enabled": "1",
+                "modified_service_attributes": "0",
+                "event_handler": "",
+                "check_command": "check_xi_service_ping!3000.0!80%!5000.0!100%",
+                "normal_check_interval": "1",
+                "retry_check_interval": "1",
+                "check_timeperiod_id": "131",
+                "icon_image": "",
+                "icon_image_alt": "",
+                "has_been_checked": "1",
+                "current_check_attempt": "1",
+                "max_check_attempts": "5",
+                "last_check": "2017-08-13 01:03:40",
+                "next_check": "2017-08-13 01:04:38",
+                "state_type": "1",
+                "notifications_enabled": "1",
+                "problem_acknowledged": "0",
+                "flap_detection_enabled": "1",
+                "is_flapping": "0",
+                "percent_state_change": "0",
+                "latency": "0",
+                "execution_time": "0.00214",
+                "scheduled_downtime_depth": "0",
+                "passive_checks_enabled": "1",
+                "active_checks_enabled": "1"
+            },
+            {
+                "@attributes": {
+                    "id": "365"
+                },
+                "instance_id": "1",
+                "service_id": "182",
+                "host_id": "169",
+                "host_name": "database.myworld.net",
+                "host_alias": "database.myworld.net",
+                "name": "Swap Usage",
+                "host_display_name": "",
+                "host_address": "192.168.240.13",
+                "display_name": "Swap Usage",
+                "status_update_time": "2017-08-13 01:04:19",
+                "status_text": "SWAP OK - 100% free (1023 MB out of 1023 MB)",
+                "status_text_long": "",
+                "current_state": "0",
+                "performance_data": "swap=1023MB;511;204;0;1023",
+                "should_be_scheduled": "1",
+                "check_type": "0",
+                "last_state_change": "2017-08-12 22:24:49",
+                "last_hard_state_change": "2017-08-12 22:24:49",
+                "last_hard_state": "0",
+                "last_time_ok": "2017-08-13 01:03:25",
+                "last_time_warning": "1970-01-01 01:00:00",
+                "last_time_critical": "1970-01-01 01:00:00",
+                "last_time_unknown": "1970-01-01 01:00:00",
+                "last_notification": "1970-01-01 01:00:00",
+                "next_notification": "1970-01-01 01:00:00",
+                "no_more_notifications": "0",
+                "acknowledgement_type": "0",
+                "current_notification_number": "0",
+                "process_performance_data": "1",
+                "obsess_over_service": "1",
+                "event_handler_enabled": "1",
+                "modified_service_attributes": "0",
+                "event_handler": "",
+                "check_command": "check_nrpe!check_swap!-a &apos;-w 50% -c 20%&apos;",
+                "normal_check_interval": "1",
+                "retry_check_interval": "1",
+                "check_timeperiod_id": "131",
+                "icon_image": "",
+                "icon_image_alt": "",
+                "has_been_checked": "1",
+                "current_check_attempt": "1",
+                "max_check_attempts": "5",
+                "last_check": "2017-08-13 01:03:25",
+                "next_check": "2017-08-13 01:04:24",
+                "state_type": "1",
+                "notifications_enabled": "1",
+                "problem_acknowledged": "0",
+                "flap_detection_enabled": "1",
+                "is_flapping": "0",
+                "percent_state_change": "0",
+                "latency": "0",
+                "execution_time": "0.01452",
+                "scheduled_downtime_depth": "0",
+                "passive_checks_enabled": "1",
+                "active_checks_enabled": "1"
+            },
+            {
+                "@attributes": {
+                    "id": "366"
+                },
+                "instance_id": "1",
+                "service_id": "183",
+                "host_id": "169",
+                "host_name": "database.myworld.net",
+                "host_alias": "database.myworld.net",
+                "name": "Total Processes",
+                "host_display_name": "",
+                "host_address": "192.168.240.13",
+                "display_name": "Total Processes",
+                "status_update_time": "2017-08-13 01:03:47",
+                "status_text": "PROCS OK: 84 processes",
+                "status_text_long": "",
+                "current_state": "0",
+                "performance_data": "procs=84;150;250;0;",
+                "should_be_scheduled": "1",
+                "check_type": "0",
+                "last_state_change": "2017-08-12 22:24:09",
+                "last_hard_state_change": "2017-08-12 22:24:09",
+                "last_hard_state": "0",
+                "last_time_ok": "2017-08-13 01:03:47",
+                "last_time_warning": "1970-01-01 01:00:00",
+                "last_time_critical": "1970-01-01 01:00:00",
+                "last_time_unknown": "1970-01-01 01:00:00",
+                "last_notification": "1970-01-01 01:00:00",
+                "next_notification": "1970-01-01 01:00:00",
+                "no_more_notifications": "0",
+                "acknowledgement_type": "0",
+                "current_notification_number": "0",
+                "process_performance_data": "1",
+                "obsess_over_service": "1",
+                "event_handler_enabled": "1",
+                "modified_service_attributes": "0",
+                "event_handler": "",
+                "check_command": "check_nrpe!check_procs!-a &apos;-w 150 -c 250&apos;",
+                "normal_check_interval": "1",
+                "retry_check_interval": "1",
+                "check_timeperiod_id": "131",
+                "icon_image": "",
+                "icon_image_alt": "",
+                "has_been_checked": "1",
+                "current_check_attempt": "1",
+                "max_check_attempts": "5",
+                "last_check": "2017-08-13 01:03:47",
+                "next_check": "2017-08-13 01:04:47",
+                "state_type": "1",
+                "notifications_enabled": "1",
+                "problem_acknowledged": "0",
+                "flap_detection_enabled": "1",
+                "is_flapping": "0",
+                "percent_state_change": "0",
+                "latency": "0",
+                "execution_time": "0.01831",
+                "scheduled_downtime_depth": "0",
+                "passive_checks_enabled": "1",
+                "active_checks_enabled": "1"
+            }
+        ]
+    }
+}
+
+------------------------------------------------------
+
+ curl -XGET "http://prod-nagios/nagiosxi/api/v1/objects/hostgroupmembers?apikey=gJl5mvAQ0Xk0VfeHGCtlVuRJEElD8I7nHrLjhhaBftBa358IGE3SpaB3NcVUT2BB&pretty=1" -k > /tmp/out.txt
+
+
+{
+    "hostgrouplist": {
+        "recordcount": "26",
+        "hostgroup": [
+            {
+                "@attributes": {
+                    "id": "2086"
+                },
+                "instance_id": "1",
+                "hostgroup_name": "PTS-PRODUCTION-IL2",
+                "members": {
+                    "host": [
+                        {
+                            "@attributes": {
+                                "id": "187"
+                            },
+                            "host_name": "ptsprox01.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "208"
+                            },
+                            "host_name": "ptsagentdb01.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "215"
+                            },
+                            "host_name": "ptsagentfront01.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "384"
+                            },
+                            "host_name": "ptsfront.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "982"
+                            },
+                            "host_name": "www.findpensioncontacts.service.gov.uk"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "173"
+                            },
+                            "host_name": "ptsagentprox01.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "180"
+                            },
+                            "host_name": "ptsdb01.itsprod.net"
+                        }
+                    ]
+                }
+            },
+            {
+                "@attributes": {
+                    "id": "2082"
+                },
+                "instance_id": "1",
+                "hostgroup_name": "GYSP-PRODUCTION-IL2",
+                "members": {
+                    "host": [
+                        {
+                            "@attributes": {
+                                "id": "2041"
+                            },
+                            "host_name": "gyspil2prodpup01.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "2098"
+                            },
+                            "host_name": "gyspil2prodprx01.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "2602"
+                            },
+                            "host_name": "gysp-il2-prod-kong01.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "2611"
+                            },
+                            "host_name": "gysp-il2-prod-services01.itsprod.net"
+                        }
+                    ]
+                }
+            },
+            {
+                "@attributes": {
+                    "id": "2118"
+                },
+                "instance_id": "1",
+                "hostgroup_name": "CSS-PRODUCTION-IL2",
+                "members": {
+                    "host": [
+                        {
+                            "@attributes": {
+                                "id": "1905"
+                            },
+                            "host_name": "cssprodapp01.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "1906"
+                            },
+                            "host_name": "cssprodapp02.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "1907"
+                            },
+                            "host_name": "cssprodmongo01.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "1908"
+                            },
+                            "host_name": "cssprodmongo02.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "1909"
+                            },
+                            "host_name": "cssprodmongo03.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "1910"
+                            },
+                            "host_name": "cssprodnginx01.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "1911"
+                            },
+                            "host_name": "cssprodnginx02.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "1824"
+                            },
+                            "host_name": "cssprodactivemq01.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "1904"
+                            },
+                            "host_name": "cssprodactivemq02.itsprod.net"
+                        }
+                    ]
+                }
+            },
+            {
+                "@attributes": {
+                    "id": "2129"
+                },
+                "instance_id": "1",
+                "hostgroup_name": "CSS-JIT-PRODUCTION-IL2",
+                "members": {
+                    "host": [
+                        {
+                            "@attributes": {
+                                "id": "1839"
+                            },
+                            "host_name": "cssjitnginx01.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "1984"
+                            },
+                            "host_name": "cssjitmongo01.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "1835"
+                            },
+                            "host_name": "cssjitapp01.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "1836"
+                            },
+                            "host_name": "cssjitapp02.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "1837"
+                            },
+                            "host_name": "cssjitmongo02.itsprod.net"
+                        },
+                        {
+                            "@attributes": {
+                                "id": "1838"
+                            },
+                            "host_name": "cssjitmongo03.itsprod.net"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

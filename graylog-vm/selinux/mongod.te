@@ -1,0 +1,20 @@
+module mongod 1.0;
+
+require {
+	type locale_t;
+	type mongod_t;
+	type ld_so_cache_t;
+	type mongod_var_lib_t;
+	type default_t;
+	class dir { create read write add_name remove_name rmdir };
+	class file { rename read lock create write getattr unlink open execute append };
+}
+
+#============= mongod_t ==============
+
+allow mongod_t ld_so_cache_t:file execute;
+allow mongod_t locale_t:file execute;
+allow mongod_t mongod_var_lib_t:file execute;
+allow mongod_t default_t:file rename;
+allow mongod_t default_t:file { write getattr read lock create unlink open append };
+allow mongod_t default_t:dir { create read write add_name remove_name rmdir };

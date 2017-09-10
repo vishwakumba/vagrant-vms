@@ -1,0 +1,19 @@
+// Note: elasticsearch requires 2096 M of heap size	
+[
+    {
+        "name": "mygraylog",
+        "hostname": "mygraylog.myworld.net", 
+        "mem": 4096,
+        "cpu": 1,
+        "ip": "192.168.7.175"
+    },
+    {
+        "name": "myfilebeat",
+        "hostname": "myfilebeat.myworld.net", 
+        "mem": 512,
+        "cpu": 1,
+        "ip": "192.168.7.176"
+    }
+]
+
+

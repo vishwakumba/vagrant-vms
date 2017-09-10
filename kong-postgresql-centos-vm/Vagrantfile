@@ -1,0 +1,34 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+servers = JSON.parse(File.read(File.join(File.dirname(__FILE__), 'servers.json')))
+
+Vagrant.configure(2) do |config|
+  config.ssh.insert_key = false
+  config.vm.box = 'puppetlabs/centos-7.2-64-nocm'
+
+  config.vm.provider "virtualbox" do |vb|
+     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+  end
+
+  servers.each do |opts|
+
+    config.vm.define opts['name'] do |v|
+      v.vm.hostname = opts['hostname']
+      v.vm.network :private_network, ip: opts['ip']
+
+      v.vm.provider "virtualbox" do |v|
+        v.customize ["modifyvm", :id, "--memory", opts['mem']]
+        v.customize ["modifyvm", :id, "--cpus", opts['cpu']]
+      end
+
+      v.vm.provision "shell", inline: "systemctl restart network"
+      v.vm.provision "shell", inline: "sed -i -e 's/^SELINUX=.*/SELINUX=enforcing/' /etc/selinux/config"
+      v.vm.provision "shell" do |s|
+        s.path = "add-hosts.sh"
+      end
+
+   end
+  end
+
+end

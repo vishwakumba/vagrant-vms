@@ -1,0 +1,20 @@
+filebeat.prospectors:
+- input_type: log
+  paths:
+     - /var/log/gysp/*
+     - /var/log/nginx/*
+     - /var/log/redis/*
+     - /var/log/mongodb/*
+     - /var/log/cassandra/*
+     - /usr/local/kong/logs/*
+     
+  exclude_files: ['\.gz$']
+  multiline.pattern: '^[[:space:]]+|^Caused by:'
+  multiline.negate: false
+  multiline.match: after
+
+output.logstash:
+  hosts: ["<<GRAYLOG_HOST_NAME>>:<<GRAYLOG_INPUT_PORT>>"]
+
+#logging.level: debug
+

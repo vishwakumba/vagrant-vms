@@ -1,0 +1,17 @@
+http://myjenkins:8080/job/good-job/lastBuild/api/json
+
+{"_class":"hudson.model.FreeStyleBuild","actions":[{"_class":"hudson.model.CauseAction","causes":[{"_class":"hudson.model.Cause$UserIdCause","shortDescription":"Started by user vishwa","userId":"vishwa","userName":"vishwa"}]},{},{}],"artifacts":[],"building":false,"description":null,"displayName":"#2","duration":39,"estimatedDuration":111,"executor":null,"fullDisplayName":"good-job #2","id":"2","keepLog":false,"number":2,"queueId":3,"result":"FAILURE","timestamp":1495489219804,"url":"http://myjenkins:8080/job/good-job/2/","builtOn":"","changeSet":{"_class":"hudson.scm.EmptyChangeLogSet","items":[],"kind":null},"culprits":[]}
+
+http://myjenkins:8080/job/better-job/lastBuild/api/json
+
+{"_class":"hudson.model.FreeStyleBuild","actions":[{"_class":"hudson.model.CauseAction","causes":[{"_class":"hudson.model.Cause$UserIdCause","shortDescription":"Started by user vishwa","userId":"vishwa","userName":"vishwa"}]},{},{}],"artifacts":[],"building":false,"description":null,"displayName":"#1","duration":209,"estimatedDuration":209,"executor":null,"fullDisplayName":"better-job #1","id":"1","keepLog":false,"number":1,"queueId":2,"result":"SUCCESS","timestamp":1495489202380,"url":"http://myjenkins:8080/job/better-job/1/","builtOn":"","changeSet":{"_class":"hudson.scm.EmptyChangeLogSet","items":[],"kind":null},"culprits":[]}
+
+
+
+Note : Both the below commands work..
+
+curl -u vish.vish:vishwa http://myjenkins:8080/job/acceptance-tests-complete/lastCompletedBuild/api/json
+
+curl -u vish.vish:d646538f91796c9512c5bc60cb69f69f http://myjenkins:8080/job/qa-acceptance-tests-complete/lastCompletedBuild/api/json
+
+

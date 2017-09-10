@@ -1,0 +1,1045 @@
+2017/08/01 11:00:55 [notice] 50997#0: using the "epoll" event method
+2017/08/01 11:00:55 [notice] 50997#0: openresty/1.11.2.2
+2017/08/01 11:00:55 [notice] 50997#0: built by gcc 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) 
+2017/08/01 11:00:55 [notice] 50997#0: OS: Linux 3.10.0-514.26.2.el7.x86_64
+2017/08/01 11:00:55 [notice] 50997#0: getrlimit(RLIMIT_NOFILE): 1024:4096
+2017/08/01 11:00:55 [notice] 51004#0: start worker processes
+2017/08/01 11:00:55 [notice] 51004#0: start worker process 51005
+2017/08/01 11:00:56 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/01 11:00:56 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/01 11:00:56 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/01 11:00:56 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/01 11:00:57 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/01 11:00:57 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/01 11:00:57 [error] 51005#0: *11 recv() failed (111: Connection refused), client: 127.0.0.1, server: kong_admin, request: "POST /apis/bankvalidation/plugins HTTP/1.1", host: "localhost:8001"
+2017/08/01 11:00:57 [error] 51005#0: *11 recv() failed (111: Connection refused), client: 127.0.0.1, server: kong_admin, request: "POST /apis/bankvalidation/plugins HTTP/1.1", host: "localhost:8001"
+2017/08/01 11:00:57 [error] 51005#0: *11 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, client: 127.0.0.1, server: kong_admin, request: "POST /apis/bankvalidation/plugins HTTP/1.1", host: "localhost:8001"
+2017/08/01 11:00:58 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/01 11:00:58 [error] 51005#0: *15 recv() failed (111: Connection refused), client: 127.0.0.1, server: kong_admin, request: "POST /apis/bankvalidation/plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/01 11:00:58 [error] 51005#0: *15 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, client: 127.0.0.1, server: kong_admin, request: "POST /apis/bankvalidation/plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/01 11:00:58 [warn] 51005#0: *19 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:00:58 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/01 11:00:58 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/01 11:00:58 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/01 11:00:58 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/01 11:01:01 [warn] 51005#0: *34 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:04 [warn] 51005#0: *38 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:07 [warn] 51005#0: *42 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:10 [warn] 51005#0: *46 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:13 [warn] 51005#0: *50 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:16 [warn] 51005#0: *54 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:19 [warn] 51005#0: *58 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:22 [warn] 51005#0: *62 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:25 [warn] 51005#0: *67 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:28 [warn] 51005#0: *71 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:31 [warn] 51005#0: *75 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:34 [warn] 51005#0: *79 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:37 [warn] 51005#0: *83 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:40 [warn] 51005#0: *87 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:43 [warn] 51005#0: *91 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:46 [warn] 51005#0: *95 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:49 [warn] 51005#0: *99 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:52 [warn] 51005#0: *103 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:01:55 [warn] 51005#0: *108 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/01 11:35:51 [warn] 51005#0: *2211 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/01 11:35:56 [warn] 51005#0: *2217 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/01 13:00:55 [error] 51005#0: *7486 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/01 13:00:55 [error] 51005#0: *7486 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/01 13:00:55 [error] 51005#0: *7486 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/01 14:00:55 [error] 51005#0: *11207 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/01 19:00:55 [error] 51005#0: *29813 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/01 19:00:55 [error] 51005#0: *29813 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/01 19:00:55 [error] 51005#0: *29813 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/01 20:00:55 [error] 51005#0: *33534 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/01 22:00:55 [error] 51005#0: *40975 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/01 22:00:55 [error] 51005#0: *40975 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/01 22:00:55 [error] 51005#0: *40975 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/01 23:00:55 [error] 51005#0: *44696 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/01 23:00:55 [error] 51005#0: *44696 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/01 23:00:55 [error] 51005#0: *44696 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/02 00:00:55 [error] 51005#0: *48416 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 00:00:55 [error] 51005#0: *48416 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 00:00:55 [error] 51005#0: *48416 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/02 01:00:55 [error] 51005#0: *52136 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 02:00:55 [error] 51005#0: *55858 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 02:00:55 [error] 51005#0: *55858 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 02:00:55 [error] 51005#0: *55858 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/02 03:00:55 [error] 51005#0: *59578 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 05:00:55 [error] 51005#0: *67013 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 05:00:55 [error] 51005#0: *67013 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 05:00:55 [error] 51005#0: *67013 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/02 06:00:55 [error] 51005#0: *70733 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 08:00:55 [error] 51005#0: *78176 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 08:00:55 [error] 51005#0: *78176 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 08:00:55 [error] 51005#0: *78176 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/02 09:00:55 [error] 51005#0: *81897 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 09:00:55 [error] 51005#0: *81897 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 09:00:55 [error] 51005#0: *81897 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/02 10:00:55 [error] 51005#0: *85617 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 11:00:55 [error] 51005#0: *89338 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 11:00:55 [error] 51005#0: *89338 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 11:00:55 [error] 51005#0: *89338 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/02 12:00:55 [error] 51005#0: *93059 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 13:00:55 [error] 51005#0: *96780 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 13:00:55 [error] 51005#0: *96780 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 13:00:55 [error] 51005#0: *96780 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/02 14:00:55 [error] 51005#0: *100501 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 19:00:55 [error] 51005#0: *119107 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 19:00:55 [error] 51005#0: *119107 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 19:00:55 [error] 51005#0: *119107 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/02 20:00:55 [error] 51005#0: *122828 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 21:00:55 [error] 51005#0: *126550 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 21:00:55 [error] 51005#0: *126550 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 21:00:55 [error] 51005#0: *126550 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/02 22:00:55 [error] 51005#0: *130270 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 22:00:55 [error] 51005#0: *130270 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 22:00:55 [error] 51005#0: *130270 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/02 23:00:55 [error] 51005#0: *133989 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 23:00:55 [error] 51005#0: *133989 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/02 23:00:55 [error] 51005#0: *133989 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/03 00:00:55 [error] 51005#0: *137710 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 01:00:55 [error] 51005#0: *141431 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 01:00:55 [error] 51005#0: *141431 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 01:00:55 [error] 51005#0: *141431 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/03 02:00:55 [error] 51005#0: *145151 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 03:00:55 [error] 51005#0: *148873 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 03:00:55 [error] 51005#0: *148873 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 03:00:55 [error] 51005#0: *148873 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/03 04:00:55 [error] 51005#0: *152585 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 08:00:55 [error] 51005#0: *167471 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 08:00:55 [error] 51005#0: *167471 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 08:00:55 [error] 51005#0: *167471 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/03 09:00:55 [error] 51005#0: *171191 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 09:21:59 [error] 51005#0: *172502 recv() failed (111: Connection refused), client: 10.64.16.35, server: kong, request: "POST /api/bankvalidate HTTP/1.1", host: "10.155.16.33"
+2017/08/03 09:21:59 [error] 51005#0: *172502 recv() failed (111: Connection refused), client: 10.64.16.35, server: kong, request: "POST /api/bankvalidate HTTP/1.1", host: "10.155.16.33"
+2017/08/03 09:21:59 [error] 51005#0: *172502 [lua] responses.lua:107: before(): failed the initial dns/balancer resolve for 'gysp-il2-prod-services01.itsprod.net' with: failed to receive reply from UDP server 10.2.1.2:53: connection refused, client: 10.64.16.35, server: kong, request: "POST /api/bankvalidate HTTP/1.1", host: "10.155.16.33"
+2017/08/03 09:56:45 [warn] 51005#0: *174658 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /apis HTTP/1.1", host: "localhost:8001"
+2017/08/03 09:56:57 [warn] 51005#0: *174671 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /apis HTTP/1.1", host: "localhost:8001"
+2017/08/03 09:57:00 [warn] 51005#0: *174676 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /apis HTTP/1.1", host: "localhost:8001"
+2017/08/03 10:00:55 [error] 51005#0: *174919 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 10:00:55 [error] 51005#0: *174919 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 10:00:55 [error] 51005#0: *174919 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/03 10:05:41 [warn] 51005#0: *175218 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /apis HTTP/1.1", host: "localhost:8001"
+2017/08/03 10:05:43 [warn] 51005#0: *175221 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /apis HTTP/1.1", host: "localhost:8001"
+2017/08/03 10:05:50 [warn] 51005#0: *175230 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /apis HTTP/1.1", host: "localhost:8001"
+2017/08/03 10:28:32 [error] 51005#0: *176637 recv() failed (111: Connection refused), client: 127.0.0.1, server: kong, request: "GET /api HTTP/1.1", host: "10.155.16.33"
+2017/08/03 10:28:32 [error] 51005#0: *176637 recv() failed (111: Connection refused), client: 127.0.0.1, server: kong, request: "GET /api HTTP/1.1", host: "10.155.16.33"
+2017/08/03 10:28:32 [error] 51005#0: *176637 [lua] responses.lua:107: before(): failed the initial dns/balancer resolve for 'gysp-il2-prod-services01.itsprod.net' with: failed to receive reply from UDP server 10.2.1.2:53: connection refused, client: 127.0.0.1, server: kong, request: "GET /api HTTP/1.1", host: "10.155.16.33"
+2017/08/03 10:33:52 [warn] 51005#0: *176970 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/03 10:33:56 [warn] 51005#0: *176974 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/03 10:34:19 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:34:20 [error] 51005#0: *177000 recv() failed (111: Connection refused), client: 127.0.0.1, server: kong_admin, request: "POST /plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/03 10:34:20 [error] 51005#0: *177000 recv() failed (111: Connection refused), client: 127.0.0.1, server: kong_admin, request: "POST /plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/03 10:34:20 [error] 51005#0: *177000 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, client: 127.0.0.1, server: kong_admin, request: "POST /plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/03 10:34:23 [warn] 51005#0: *177007 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/03 10:35:38 [warn] 51005#0: *177087 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /apis HTTP/1.1", host: "localhost:8001"
+2017/08/03 10:36:07 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:36:08 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:36:08 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:36:08 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:36:08 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:36:08 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:36:08 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:36:08 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:36:08 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:36:08 [error] 51005#0: *177130 recv() failed (111: Connection refused), client: 127.0.0.1, server: kong_admin, request: "POST /apis/bankvalidation/plugins HTTP/1.1", host: "localhost:8001"
+2017/08/03 10:36:08 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:36:08 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:36:09 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:36:09 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:36:09 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/03 10:36:15 [warn] 51005#0: *177154 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /apis HTTP/1.1", host: "localhost:8001"
+2017/08/03 12:00:55 [error] 51005#0: *182420 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 12:00:55 [error] 51005#0: *182420 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 12:00:55 [error] 51005#0: *182420 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/03 13:00:55 [error] 51005#0: *186149 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 13:00:55 [error] 51005#0: *186149 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 13:00:55 [error] 51005#0: *186149 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/03 13:44:06 [warn] 51005#0: *188828 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/03 13:44:38 [warn] 51005#0: *188862 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /apis HTTP/1.1", host: "localhost:8001"
+2017/08/03 14:00:55 [error] 51005#0: *189871 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 17:00:55 [error] 51005#0: *201051 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 17:00:55 [error] 51005#0: *201051 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 17:00:55 [error] 51005#0: *201051 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/03 18:00:55 [error] 51005#0: *204772 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 18:00:55 [error] 51005#0: *204772 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 18:00:55 [error] 51005#0: *204772 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/03 19:00:55 [error] 51005#0: *208492 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 19:00:55 [error] 51005#0: *208492 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 19:00:55 [error] 51005#0: *208492 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/03 20:00:55 [error] 51005#0: *212220 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 23:00:55 [error] 51005#0: *223387 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 23:00:55 [error] 51005#0: *223387 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/03 23:00:55 [error] 51005#0: *223387 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/04 00:00:55 [error] 51005#0: *227107 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 00:00:55 [error] 51005#0: *227107 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 00:00:55 [error] 51005#0: *227107 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/04 01:00:55 [error] 51005#0: *230828 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 02:00:55 [error] 51005#0: *234549 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 02:00:55 [error] 51005#0: *234549 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 02:00:55 [error] 51005#0: *234549 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/04 03:00:55 [error] 51005#0: *238270 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 03:00:55 [error] 51005#0: *238270 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 03:00:55 [error] 51005#0: *238270 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/04 04:00:55 [error] 51005#0: *241977 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 04:00:55 [error] 51005#0: *241977 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 04:00:55 [error] 51005#0: *241977 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/04 05:00:55 [error] 51005#0: *245698 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 06:00:55 [error] 51005#0: *249419 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 06:00:55 [error] 51005#0: *249419 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 06:00:55 [error] 51005#0: *249419 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/04 07:00:55 [error] 51005#0: *253139 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 08:00:55 [error] 51005#0: *256861 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 08:00:55 [error] 51005#0: *256861 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 08:00:55 [error] 51005#0: *256861 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/04 09:00:55 [error] 51005#0: *260581 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 09:00:55 [error] 51005#0: *260581 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 09:00:55 [error] 51005#0: *260581 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/04 09:59:08 [warn] 51005#0: *264192 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/04 09:59:42 [warn] 51005#0: *264227 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /plugins?name=file-log HTTP/1.1", host: "localhost:8001"
+2017/08/04 09:59:42 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/04 09:59:46 [warn] 51005#0: *264235 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/04 09:59:49 [warn] 51005#0: *264239 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/04 10:00:55 [error] 51005#0: *264308 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 10:58:19 [warn] 51005#0: *267868 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, client: 127.0.0.1, server: kong_admin, request: "GET /plugins/ HTTP/1.1", host: "localhost:8001"
+2017/08/04 11:00:55 [error] 51005#0: *268030 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 11:00:55 [error] 51005#0: *268030 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 11:00:55 [error] 51005#0: *268030 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/04 12:00:55 [error] 51005#0: *271750 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 12:00:55 [error] 51005#0: *271750 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 12:00:55 [error] 51005#0: *271750 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/04 13:00:55 [error] 51005#0: *275471 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 14:00:55 [error] 51005#0: *279192 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 14:00:55 [error] 51005#0: *279192 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 14:00:55 [error] 51005#0: *279192 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/04 15:00:55 [error] 51005#0: *282912 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 23:00:55 [error] 51005#0: *312694 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 23:00:55 [error] 51005#0: *312694 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/04 23:00:55 [error] 51005#0: *312694 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/05 00:00:55 [error] 51005#0: *316414 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 00:00:55 [error] 51005#0: *316414 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 00:00:55 [error] 51005#0: *316414 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/05 01:00:55 [error] 51005#0: *320135 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 01:00:55 [error] 51005#0: *320135 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 01:00:55 [error] 51005#0: *320135 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/05 02:00:55 [error] 51005#0: *323855 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 03:00:55 [error] 51005#0: *327577 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 03:00:55 [error] 51005#0: *327577 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 03:00:55 [error] 51005#0: *327577 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/05 04:00:55 [error] 51005#0: *331285 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 04:00:55 [error] 51005#0: *331285 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 04:00:55 [error] 51005#0: *331285 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/05 05:00:55 [error] 51005#0: *335006 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 05:00:55 [error] 51005#0: *335006 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 05:00:55 [error] 51005#0: *335006 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/05 06:00:55 [error] 51005#0: *338726 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 09:00:55 [error] 51005#0: *349891 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 09:00:55 [error] 51005#0: *349891 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 09:00:55 [error] 51005#0: *349891 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/05 10:00:55 [error] 51005#0: *353611 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 11:00:55 [error] 51005#0: *357336 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 11:00:55 [error] 51005#0: *357336 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 11:00:55 [error] 51005#0: *357336 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/05 12:00:55 [error] 51005#0: *361059 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 13:00:55 [error] 51005#0: *364787 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 13:00:55 [error] 51005#0: *364787 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 13:00:55 [error] 51005#0: *364787 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/05 14:00:55 [error] 51005#0: *368507 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 18:00:55 [error] 51005#0: *383399 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 18:00:55 [error] 51005#0: *383399 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 18:00:55 [error] 51005#0: *383399 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/05 19:00:55 [error] 51005#0: *387120 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 19:00:55 [error] 51005#0: *387120 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 19:00:55 [error] 51005#0: *387120 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/05 20:00:55 [error] 51005#0: *390843 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 22:00:55 [error] 51005#0: *398287 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 22:00:55 [error] 51005#0: *398287 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 22:00:55 [error] 51005#0: *398287 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/05 23:00:55 [error] 51005#0: *402008 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 23:00:55 [error] 51005#0: *402008 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/05 23:00:55 [error] 51005#0: *402008 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/06 00:00:55 [error] 51005#0: *405728 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 00:00:55 [error] 51005#0: *405728 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 00:00:55 [error] 51005#0: *405728 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/06 01:00:55 [error] 51005#0: *409449 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 03:00:55 [error] 51005#0: *416892 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 03:00:55 [error] 51005#0: *416892 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 03:00:55 [error] 51005#0: *416892 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/06 04:00:55 [error] 51005#0: *420601 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 04:00:55 [error] 51005#0: *420601 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 04:00:55 [error] 51005#0: *420601 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/06 05:00:55 [error] 51005#0: *424322 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 05:00:55 [error] 51005#0: *424322 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 05:00:55 [error] 51005#0: *424322 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/06 06:00:55 [error] 51005#0: *428042 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 06:00:55 [error] 51005#0: *428042 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 06:00:55 [error] 51005#0: *428042 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/06 07:00:55 [error] 51005#0: *431763 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 09:00:55 [error] 51005#0: *439206 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 09:00:55 [error] 51005#0: *439206 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 09:00:55 [error] 51005#0: *439206 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/06 10:00:55 [error] 51005#0: *442929 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 10:00:55 [error] 51005#0: *442929 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 10:00:55 [error] 51005#0: *442929 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/06 11:00:55 [error] 51005#0: *446652 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 11:00:55 [error] 51005#0: *446652 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 11:00:55 [error] 51005#0: *446652 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/06 12:00:55 [error] 51005#0: *450376 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 13:00:55 [error] 51005#0: *454097 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 13:00:55 [error] 51005#0: *454097 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 13:00:55 [error] 51005#0: *454097 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/06 14:00:55 [error] 51005#0: *457818 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 14:00:55 [error] 51005#0: *457818 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 14:00:55 [error] 51005#0: *457818 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/06 15:00:55 [error] 51005#0: *461538 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 15:00:55 [error] 51005#0: *461538 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 15:00:55 [error] 51005#0: *461538 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/06 16:00:55 [error] 51005#0: *465259 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 19:00:55 [error] 51005#0: *476423 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 19:00:55 [error] 51005#0: *476423 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 19:00:55 [error] 51005#0: *476423 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/06 20:00:55 [error] 51005#0: *480143 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 20:00:55 [error] 51005#0: *480143 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 20:00:55 [error] 51005#0: *480143 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/06 21:00:55 [error] 51005#0: *483862 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 21:00:55 [error] 51005#0: *483862 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/06 21:00:55 [error] 51005#0: *483862 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/06 22:00:55 [error] 51005#0: *487583 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 00:00:55 [error] 51005#0: *495026 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 00:00:55 [error] 51005#0: *495026 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 00:00:55 [error] 51005#0: *495026 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/07 01:00:55 [error] 51005#0: *498746 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 01:00:55 [error] 51005#0: *498746 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 01:00:55 [error] 51005#0: *498746 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/07 02:00:55 [error] 51005#0: *502467 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 02:00:55 [error] 51005#0: *502467 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 02:00:55 [error] 51005#0: *502467 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/07 03:00:55 [error] 51005#0: *506187 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 05:00:55 [error] 51005#0: *513623 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 05:00:55 [error] 51005#0: *513623 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 05:00:55 [error] 51005#0: *513623 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/07 06:00:55 [error] 51005#0: *517343 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 07:00:55 [error] 51005#0: *521064 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 07:00:55 [error] 51005#0: *521064 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 07:00:55 [error] 51005#0: *521064 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/07 08:00:55 [error] 51005#0: *524785 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 09:00:55 [error] 51005#0: *528506 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 09:00:55 [error] 51005#0: *528506 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 09:00:55 [error] 51005#0: *528506 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/07 10:00:55 [error] 51005#0: *532227 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 14:00:55 [error] 51005#0: *547122 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 14:00:55 [error] 51005#0: *547122 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 14:00:55 [error] 51005#0: *547122 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/07 15:00:55 [error] 51005#0: *550843 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 16:00:55 [error] 51005#0: *554564 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 16:00:55 [error] 51005#0: *554564 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 16:00:55 [error] 51005#0: *554564 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/07 17:00:55 [error] 51005#0: *558288 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 20:00:55 [error] 51005#0: *569455 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 20:00:55 [error] 51005#0: *569455 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 20:00:55 [error] 51005#0: *569455 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/07 21:00:55 [error] 51005#0: *573179 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 22:00:55 [error] 51005#0: *576898 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 22:00:55 [error] 51005#0: *576898 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 22:00:55 [error] 51005#0: *576898 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/07 23:00:55 [error] 51005#0: *580619 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 23:00:55 [error] 51005#0: *580619 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/07 23:00:55 [error] 51005#0: *580619 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/08 00:00:55 [error] 51005#0: *584339 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 01:00:55 [error] 51005#0: *588060 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 01:00:55 [error] 51005#0: *588060 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 01:00:55 [error] 51005#0: *588060 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/08 02:00:55 [error] 51005#0: *591781 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 02:00:55 [error] 51005#0: *591781 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 02:00:55 [error] 51005#0: *591781 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/08 03:00:55 [error] 51005#0: *595501 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 04:00:55 [error] 51005#0: *599212 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 04:00:55 [error] 51005#0: *599212 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 04:00:55 [error] 51005#0: *599212 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/08 05:00:55 [error] 51005#0: *602933 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 05:00:55 [error] 51005#0: *602933 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 05:00:55 [error] 51005#0: *602933 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/08 06:00:55 [error] 51005#0: *606653 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 06:00:55 [error] 51005#0: *606653 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 06:00:55 [error] 51005#0: *606653 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/08 07:00:55 [error] 51005#0: *610374 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 07:00:55 [error] 51005#0: *610374 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 07:00:55 [error] 51005#0: *610374 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/08 08:00:55 [error] 51005#0: *614094 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 09:00:55 [error] 51005#0: *617815 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 09:00:55 [error] 51005#0: *617815 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 09:00:55 [error] 51005#0: *617815 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/08 10:00:55 [error] 51005#0: *621536 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 11:00:55 [error] 51005#0: *625257 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 11:00:55 [error] 51005#0: *625257 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 11:00:55 [error] 51005#0: *625257 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/08 12:00:55 [error] 51005#0: *628978 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 12:00:55 [error] 51005#0: *628978 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 12:00:55 [error] 51005#0: *628978 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/08 13:00:55 [error] 51005#0: *632698 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 13:00:55 [error] 51005#0: *632698 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 13:00:55 [error] 51005#0: *632698 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/08 14:00:55 [error] 51005#0: *636419 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 17:00:55 [error] 51005#0: *647589 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 17:00:55 [error] 51005#0: *647589 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 17:00:55 [error] 51005#0: *647589 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/08 18:00:55 [error] 51005#0: *651309 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 18:00:55 [error] 51005#0: *651309 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 18:00:55 [error] 51005#0: *651309 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/08 19:00:55 [error] 51005#0: *655033 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 20:00:55 [error] 51005#0: *658755 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 20:00:55 [error] 51005#0: *658755 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 20:00:55 [error] 51005#0: *658755 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/08 21:00:55 [error] 51005#0: *662475 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 21:00:55 [error] 51005#0: *662475 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 21:00:55 [error] 51005#0: *662475 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/08 22:00:55 [error] 51005#0: *666195 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 22:00:55 [error] 51005#0: *666195 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 22:00:55 [error] 51005#0: *666195 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/08 23:00:55 [error] 51005#0: *669916 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 23:00:55 [error] 51005#0: *669916 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/08 23:00:55 [error] 51005#0: *669916 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/09 00:00:55 [error] 51005#0: *673636 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 02:00:55 [error] 51005#0: *681079 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 02:00:55 [error] 51005#0: *681079 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 02:00:55 [error] 51005#0: *681079 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/09 03:00:55 [error] 51005#0: *684800 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 04:00:55 [error] 51005#0: *688512 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 04:00:55 [error] 51005#0: *688512 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 04:00:55 [error] 51005#0: *688512 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/09 05:00:55 [error] 51005#0: *692232 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 07:00:55 [error] 51005#0: *699675 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 07:00:55 [error] 51005#0: *699675 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 07:00:55 [error] 51005#0: *699675 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/09 08:00:55 [error] 51005#0: *703396 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 08:00:55 [error] 51005#0: *703396 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 08:00:55 [error] 51005#0: *703396 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/09 09:00:55 [error] 51005#0: *707117 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 11:00:55 [error] 51005#0: *714562 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 11:00:55 [error] 51005#0: *714562 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 11:00:55 [error] 51005#0: *714562 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/09 12:00:55 [error] 51005#0: *718286 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 12:00:55 [error] 51005#0: *718286 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 12:00:55 [error] 51005#0: *718286 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/09 13:00:55 [error] 51005#0: *722006 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 14:00:55 [error] 51005#0: *725728 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 14:00:55 [error] 51005#0: *725728 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 14:00:55 [error] 51005#0: *725728 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/09 15:00:55 [error] 51005#0: *729448 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 16:00:55 [error] 51005#0: *733172 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 16:00:55 [error] 51005#0: *733172 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 16:00:55 [error] 51005#0: *733172 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/09 17:00:55 [error] 51005#0: *736893 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 17:00:55 [error] 51005#0: *736893 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 17:00:55 [error] 51005#0: *736893 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/09 18:00:55 [error] 51005#0: *740619 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 18:00:55 [error] 51005#0: *740619 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 18:00:55 [error] 51005#0: *740619 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/09 19:00:55 [error] 51005#0: *744340 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 19:00:55 [error] 51005#0: *744340 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 19:00:55 [error] 51005#0: *744340 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/09 20:00:55 [error] 51005#0: *748060 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 20:00:55 [error] 51005#0: *748060 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 20:00:55 [error] 51005#0: *748060 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/09 21:00:55 [error] 51005#0: *751778 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 21:00:55 [error] 51005#0: *751778 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 21:00:55 [error] 51005#0: *751778 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/09 22:00:55 [error] 51005#0: *755499 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 22:00:57 [error] 51005#0: *755499 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 22:00:57 [error] 51005#0: *755499 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 22:00:57 [error] 51005#0: *755499 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/09 23:00:55 [error] 51005#0: *759219 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 23:00:55 [error] 51005#0: *759219 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/09 23:00:55 [error] 51005#0: *759219 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/10 00:00:55 [error] 51005#0: *762940 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 02:00:55 [error] 51005#0: *770383 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 02:00:55 [error] 51005#0: *770383 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 02:00:55 [error] 51005#0: *770383 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/10 03:00:55 [error] 51005#0: *774103 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 03:00:55 [error] 51005#0: *774103 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 03:00:55 [error] 51005#0: *774103 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/10 04:00:55 [error] 51005#0: *777813 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 07:00:55 [error] 51005#0: *788977 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 07:00:55 [error] 51005#0: *788977 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 07:00:55 [error] 51005#0: *788977 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/10 08:00:55 [error] 51005#0: *792698 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 09:00:55 [error] 51005#0: *796419 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 09:00:55 [error] 51005#0: *796419 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 09:00:55 [error] 51005#0: *796419 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/10 10:00:55 [error] 51005#0: *800143 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 13:00:55 [error] 51005#0: *811313 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 13:00:55 [error] 51005#0: *811313 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 13:00:55 [error] 51005#0: *811313 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/10 14:00:55 [error] 51005#0: *815040 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 16:00:55 [error] 51005#0: *822486 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 16:00:55 [error] 51005#0: *822486 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 16:00:55 [error] 51005#0: *822486 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/10 16:40:49 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/10 16:40:49 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/10 16:40:49 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/10 16:40:49 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/10 16:40:49 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/10 16:40:49 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/10 16:40:49 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/10 16:40:50 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/10 16:40:50 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/10 16:40:50 [error] 51005#0: *824968 recv() failed (111: Connection refused), client: 127.0.0.1, server: kong_admin, request: "POST /apis/bankvalidation/plugins HTTP/1.1", host: "localhost:8001"
+2017/08/10 16:40:50 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/10 16:40:50 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/10 16:40:50 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/10 16:40:51 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/10 16:40:51 [notice] 51005#0: signal 17 (SIGCHLD) received
+2017/08/10 16:45:10 [error] 51005#0: *825262 recv() failed (111: Connection refused), client: 10.64.16.35, server: kong, request: "GET /api/hai HTTP/1.1", host: "10.155.16.33"
+2017/08/10 16:45:10 [error] 51005#0: *825262 recv() failed (111: Connection refused), client: 10.64.16.35, server: kong, request: "GET /api/hai HTTP/1.1", host: "10.155.16.33"
+2017/08/10 16:45:10 [error] 51005#0: *825262 [lua] responses.lua:107: before(): failed the initial dns/balancer resolve for 'gysp-il2-prod-services01.itsprod.net' with: failed to receive reply from UDP server 10.2.1.2:53: connection refused, client: 10.64.16.35, server: kong, request: "GET /api/hai HTTP/1.1", host: "10.155.16.33"
+2017/08/10 16:54:23 [error] 51005#0: *825837 recv() failed (111: Connection refused), client: 10.64.16.35, server: kong, request: "GET /api/hai HTTP/1.1", host: "10.155.16.33"
+2017/08/10 16:54:23 [error] 51005#0: *825837 recv() failed (111: Connection refused), client: 10.64.16.35, server: kong, request: "GET /api/hai HTTP/1.1", host: "10.155.16.33"
+2017/08/10 16:54:23 [error] 51005#0: *825837 [lua] responses.lua:107: before(): failed the initial dns/balancer resolve for 'gysp-il2-prod-services01.itsprod.net' with: failed to receive reply from UDP server 10.2.1.2:53: connection refused, client: 10.64.16.35, server: kong, request: "GET /api/hai HTTP/1.1", host: "10.155.16.33"
+2017/08/10 16:55:18 [notice] 51004#0: signal 15 (SIGTERM) received, exiting
+2017/08/10 16:55:18 [notice] 51005#0: exiting
+2017/08/10 16:55:18 [notice] 51004#0: signal 14 (SIGALRM) received
+2017/08/10 16:55:18 [notice] 51004#0: signal 15 (SIGTERM) received, exiting
+2017/08/10 16:55:18 [notice] 51005#0: signal 15 (SIGTERM) received, exiting
+2017/08/10 16:55:18 [notice] 51005#0: exit
+2017/08/10 16:55:18 [notice] 51004#0: signal 17 (SIGCHLD) received
+2017/08/10 16:55:18 [notice] 51004#0: worker process 51005 exited with code 0
+2017/08/10 16:55:18 [notice] 51004#0: exit
+2017/08/10 16:55:49 [notice] 50215#0: using the "epoll" event method
+2017/08/10 16:55:49 [notice] 50215#0: openresty/1.11.2.2
+2017/08/10 16:55:49 [notice] 50215#0: built by gcc 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) 
+2017/08/10 16:55:49 [notice] 50215#0: OS: Linux 3.10.0-514.26.2.el7.x86_64
+2017/08/10 16:55:49 [notice] 50215#0: getrlimit(RLIMIT_NOFILE): 1024:4096
+2017/08/10 16:55:49 [notice] 50222#0: start worker processes
+2017/08/10 16:55:49 [notice] 50222#0: start worker process 50223
+2017/08/10 16:55:50 [notice] 50223#0: signal 17 (SIGCHLD) received
+2017/08/10 16:55:50 [notice] 50223#0: signal 17 (SIGCHLD) received
+2017/08/10 16:55:50 [notice] 50223#0: signal 17 (SIGCHLD) received
+2017/08/10 16:55:50 [notice] 50223#0: signal 17 (SIGCHLD) received
+2017/08/10 16:55:52 [warn] 50223#0: *7 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:55:55 [warn] 50223#0: *11 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:55:58 [warn] 50223#0: *15 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:01 [warn] 50223#0: *19 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:04 [warn] 50223#0: *23 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:07 [warn] 50223#0: *27 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:10 [warn] 50223#0: *31 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:12 [error] 50223#0: *34 recv() failed (111: Connection refused), client: 10.64.16.35, server: kong, request: "GET /api/hai HTTP/1.1", host: "10.155.16.33"
+2017/08/10 16:56:13 [warn] 50223#0: *41 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:16 [warn] 50223#0: *45 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:19 [warn] 50223#0: *50 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:22 [warn] 50223#0: *54 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:25 [warn] 50223#0: *58 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:28 [warn] 50223#0: *62 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:31 [warn] 50223#0: *66 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:34 [warn] 50223#0: *70 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:37 [warn] 50223#0: *74 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:40 [warn] 50223#0: *78 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:43 [warn] 50223#0: *82 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:46 [warn] 50223#0: *86 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 16:56:49 [warn] 50223#0: *91 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/10 17:55:49 [error] 50223#0: *3746 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 21:55:49 [error] 50223#0: *18631 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 21:55:49 [error] 50223#0: *18631 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 21:55:49 [error] 50223#0: *18631 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/10 22:55:49 [error] 50223#0: *22351 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 22:55:49 [error] 50223#0: *22351 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/10 22:55:49 [error] 50223#0: *22351 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/10 23:55:49 [error] 50223#0: *26072 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 00:55:49 [error] 50223#0: *29793 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 00:55:49 [error] 50223#0: *29793 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 00:55:49 [error] 50223#0: *29793 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/11 01:55:49 [error] 50223#0: *33514 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 02:55:49 [error] 50223#0: *37235 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 02:55:49 [error] 50223#0: *37235 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 02:55:49 [error] 50223#0: *37235 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/11 03:55:49 [error] 50223#0: *40949 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 07:55:49 [error] 50223#0: *55834 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 07:55:49 [error] 50223#0: *55834 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 07:55:49 [error] 50223#0: *55834 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/11 08:55:49 [error] 50223#0: *59555 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 11:55:49 [error] 50223#0: *70730 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 11:55:49 [error] 50223#0: *70730 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 11:55:49 [error] 50223#0: *70730 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/11 12:55:49 [error] 50223#0: *74453 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 12:55:49 [error] 50223#0: *74453 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 12:55:49 [error] 50223#0: *74453 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/11 13:55:49 [error] 50223#0: *78179 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 15:55:49 [error] 50223#0: *85622 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 15:55:49 [error] 50223#0: *85622 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 15:55:49 [error] 50223#0: *85622 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/11 16:55:49 [error] 50223#0: *89345 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 20:55:49 [error] 50223#0: *104231 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 20:55:49 [error] 50223#0: *104231 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 20:55:49 [error] 50223#0: *104231 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/11 21:55:49 [error] 50223#0: *107949 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 21:55:49 [error] 50223#0: *107949 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 21:55:49 [error] 50223#0: *107949 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/11 22:55:49 [error] 50223#0: *111670 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 22:55:49 [error] 50223#0: *111670 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/11 22:55:49 [error] 50223#0: *111670 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/11 23:55:49 [error] 50223#0: *115391 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 00:55:49 [error] 50223#0: *119112 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 00:55:49 [error] 50223#0: *119112 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 00:55:49 [error] 50223#0: *119112 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/12 01:55:49 [error] 50223#0: *122832 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 02:55:49 [error] 50223#0: *126554 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 02:55:49 [error] 50223#0: *126554 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 02:55:49 [error] 50223#0: *126554 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/12 03:55:49 [error] 50223#0: *130266 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 03:55:49 [error] 50223#0: *130266 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 03:55:49 [error] 50223#0: *130266 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/12 04:55:49 [error] 50223#0: *133986 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 06:55:49 [error] 50223#0: *141429 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 06:55:49 [error] 50223#0: *141429 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 06:55:49 [error] 50223#0: *141429 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/12 07:55:49 [error] 50223#0: *145150 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 07:55:49 [error] 50223#0: *145150 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 07:55:49 [error] 50223#0: *145150 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/12 08:55:49 [error] 50223#0: *148871 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 09:55:49 [error] 50223#0: *152592 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 09:55:49 [error] 50223#0: *152592 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 09:55:49 [error] 50223#0: *152592 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/12 10:55:49 [error] 50223#0: *156313 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 12:55:49 [error] 50223#0: *163756 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 12:55:49 [error] 50223#0: *163756 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 12:55:49 [error] 50223#0: *163756 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/12 13:55:49 [error] 50223#0: *167476 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 14:55:49 [error] 50223#0: *171201 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 14:55:49 [error] 50223#0: *171201 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 14:55:49 [error] 50223#0: *171201 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/12 15:55:49 [error] 50223#0: *174921 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 15:55:49 [error] 50223#0: *174921 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 15:55:49 [error] 50223#0: *174921 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/12 16:55:49 [error] 50223#0: *178645 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 16:55:49 [error] 50223#0: *178645 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 16:55:49 [error] 50223#0: *178645 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/12 17:55:49 [error] 50223#0: *182365 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 17:55:49 [error] 50223#0: *182365 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 17:55:49 [error] 50223#0: *182365 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/12 18:55:49 [error] 50223#0: *186086 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 18:55:49 [error] 50223#0: *186086 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 18:55:49 [error] 50223#0: *186086 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/12 19:55:49 [error] 50223#0: *189806 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 20:55:49 [error] 50223#0: *193528 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 20:55:49 [error] 50223#0: *193528 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/12 20:55:49 [error] 50223#0: *193528 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/12 21:55:49 [error] 50223#0: *197246 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 00:55:49 [error] 50223#0: *208411 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 00:55:49 [error] 50223#0: *208411 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 00:55:49 [error] 50223#0: *208411 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/13 01:55:49 [error] 50223#0: *212131 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 02:55:49 [error] 50223#0: *215853 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 02:55:49 [error] 50223#0: *215853 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 02:55:49 [error] 50223#0: *215853 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/13 03:55:49 [error] 50223#0: *219564 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 04:55:49 [error] 50223#0: *223286 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 04:55:49 [error] 50223#0: *223286 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 04:55:49 [error] 50223#0: *223286 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/13 05:55:49 [error] 50223#0: *227006 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 05:55:49 [error] 50223#0: *227006 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 05:55:49 [error] 50223#0: *227006 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/13 06:55:49 [error] 50223#0: *230727 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 10:55:49 [error] 50223#0: *245613 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 10:55:49 [error] 50223#0: *245613 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 10:55:49 [error] 50223#0: *245613 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/13 11:55:49 [error] 50223#0: *249333 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 11:55:49 [error] 50223#0: *249333 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 11:55:49 [error] 50223#0: *249333 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/13 12:55:49 [error] 50223#0: *253056 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 12:55:49 [error] 50223#0: *253056 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 12:55:49 [error] 50223#0: *253056 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/13 13:55:49 [error] 50223#0: *256780 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 13:55:49 [error] 50223#0: *256780 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 13:55:49 [error] 50223#0: *256780 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/13 14:55:49 [error] 50223#0: *260506 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 16:55:49 [error] 50223#0: *267950 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 16:55:49 [error] 50223#0: *267950 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 16:55:49 [error] 50223#0: *267950 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/13 17:55:49 [error] 50223#0: *271673 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 17:55:49 [error] 50223#0: *271673 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 17:55:49 [error] 50223#0: *271673 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/13 18:55:49 [error] 50223#0: *275393 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 21:55:49 [error] 50223#0: *286559 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 21:55:49 [error] 50223#0: *286559 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 21:55:49 [error] 50223#0: *286559 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/13 22:55:49 [error] 50223#0: *290279 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 23:55:49 [error] 50223#0: *294001 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 23:55:49 [error] 50223#0: *294001 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/13 23:55:49 [error] 50223#0: *294001 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/14 00:55:49 [error] 50223#0: *297721 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 00:55:49 [error] 50223#0: *297721 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 00:55:49 [error] 50223#0: *297721 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/14 01:55:49 [error] 50223#0: *301441 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 01:55:49 [error] 50223#0: *301441 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 01:55:49 [error] 50223#0: *301441 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/14 02:55:49 [error] 50223#0: *305162 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 06:55:49 [error] 50223#0: *320039 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 06:55:49 [error] 50223#0: *320039 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 06:55:49 [error] 50223#0: *320039 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/14 07:55:49 [error] 50223#0: *323760 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 07:55:49 [error] 50223#0: *323760 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 07:55:49 [error] 50223#0: *323760 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/14 08:55:49 [error] 50223#0: *327483 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 09:55:49 [error] 50223#0: *331205 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 09:55:49 [error] 50223#0: *331205 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 09:55:49 [error] 50223#0: *331205 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/14 10:55:49 [error] 50223#0: *334928 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 13:55:49 [error] 50223#0: *346099 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 13:55:49 [error] 50223#0: *346099 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 13:55:49 [error] 50223#0: *346099 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/14 14:55:49 [error] 50223#0: *349820 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 15:55:49 [error] 50223#0: *353541 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 15:55:49 [error] 50223#0: *353541 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 15:55:49 [error] 50223#0: *353541 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/14 16:55:49 [error] 50223#0: *357262 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 16:55:49 [error] 50223#0: *357262 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 16:55:49 [error] 50223#0: *357262 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/14 17:55:49 [error] 50223#0: *360985 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 17:55:49 [error] 50223#0: *360985 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 17:55:49 [error] 50223#0: *360985 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/14 18:55:49 [error] 50223#0: *364709 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 19:55:49 [error] 50223#0: *368430 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 19:55:49 [error] 50223#0: *368430 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 19:55:49 [error] 50223#0: *368430 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/14 20:55:49 [error] 50223#0: *372150 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 20:55:49 [error] 50223#0: *372150 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 20:55:49 [error] 50223#0: *372150 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/14 21:55:49 [error] 50223#0: *375870 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 22:55:49 [error] 50223#0: *379594 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 22:55:49 [error] 50223#0: *379594 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 22:55:49 [error] 50223#0: *379594 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/14 23:55:49 [error] 50223#0: *383315 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 23:55:49 [error] 50223#0: *383315 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/14 23:55:49 [error] 50223#0: *383315 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/15 00:55:49 [error] 50223#0: *387035 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 00:55:49 [error] 50223#0: *387035 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 00:55:49 [error] 50223#0: *387035 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/15 01:55:49 [error] 50223#0: *390756 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 01:55:49 [error] 50223#0: *390756 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 01:55:49 [error] 50223#0: *390756 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/15 02:55:49 [error] 50223#0: *394476 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 03:55:49 [error] 50223#0: *398184 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 03:55:49 [error] 50223#0: *398184 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 03:55:49 [error] 50223#0: *398184 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/15 04:55:49 [error] 50223#0: *401905 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 04:55:49 [error] 50223#0: *401905 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 04:55:49 [error] 50223#0: *401905 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/15 05:55:49 [error] 50223#0: *405625 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 06:55:49 [error] 50223#0: *409347 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 06:55:49 [error] 50223#0: *409347 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 06:55:49 [error] 50223#0: *409347 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/15 07:55:49 [error] 50223#0: *413067 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 08:55:49 [error] 50223#0: *416792 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 08:55:49 [error] 50223#0: *416792 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 08:55:49 [error] 50223#0: *416792 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/15 09:55:49 [error] 50223#0: *420512 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 09:55:49 [error] 50223#0: *420512 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 09:55:49 [error] 50223#0: *420512 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/15 10:55:49 [error] 50223#0: *424236 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 12:55:49 [error] 50223#0: *431681 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 12:55:49 [error] 50223#0: *431681 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 12:55:49 [error] 50223#0: *431681 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/15 13:55:49 [error] 50223#0: *435408 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 14:55:49 [error] 50223#0: *439129 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 14:55:49 [error] 50223#0: *439129 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 14:55:49 [error] 50223#0: *439129 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/15 15:55:49 [error] 50223#0: *442853 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 16:55:49 [error] 50223#0: *446574 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 16:55:49 [error] 50223#0: *446574 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 16:55:49 [error] 50223#0: *446574 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/15 17:55:49 [error] 50223#0: *450298 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 17:55:49 [error] 50223#0: *450298 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 17:55:49 [error] 50223#0: *450298 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/15 18:55:49 [error] 50223#0: *454018 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 18:55:49 [error] 50223#0: *454018 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/15 18:55:49 [error] 50223#0: *454018 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/15 19:55:49 [error] 50223#0: *457739 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 00:55:49 [error] 50223#0: *476343 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 00:55:49 [error] 50223#0: *476343 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 00:55:49 [error] 50223#0: *476343 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/16 01:55:49 [error] 50223#0: *480063 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 01:55:49 [error] 50223#0: *480063 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 01:55:49 [error] 50223#0: *480063 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/16 02:55:49 [error] 50223#0: *483783 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 02:55:49 [error] 50223#0: *483783 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 02:55:49 [error] 50223#0: *483783 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/16 03:55:49 [error] 50223#0: *487495 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 03:55:49 [error] 50223#0: *487495 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 03:55:49 [error] 50223#0: *487495 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/16 04:55:49 [error] 50223#0: *491215 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 06:55:49 [error] 50223#0: *498658 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 06:55:49 [error] 50223#0: *498658 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 06:55:49 [error] 50223#0: *498658 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/16 07:55:49 [error] 50223#0: *502379 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 08:55:49 [error] 50223#0: *506100 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 08:55:49 [error] 50223#0: *506100 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 08:55:49 [error] 50223#0: *506100 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/16 09:55:49 [error] 50223#0: *509821 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 10:55:49 [error] 50223#0: *513545 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 10:55:49 [error] 50223#0: *513545 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 10:55:49 [error] 50223#0: *513545 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/16 11:55:49 [error] 50223#0: *517269 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 13:55:49 [error] 50223#0: *524711 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 13:55:49 [error] 50223#0: *524711 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 13:55:49 [error] 50223#0: *524711 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/16 14:55:49 [error] 50223#0: *528432 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 14:55:49 [error] 50223#0: *528432 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 14:55:49 [error] 50223#0: *528432 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/16 15:55:49 [error] 50223#0: *532152 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 15:55:49 [error] 50223#0: *532152 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 15:55:49 [error] 50223#0: *532152 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/16 16:55:49 [error] 50223#0: *535872 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 19:55:49 [error] 50223#0: *547039 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 19:55:49 [error] 50223#0: *547039 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 19:55:49 [error] 50223#0: *547039 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/16 20:55:49 [error] 50223#0: *550758 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 21:55:49 [error] 50223#0: *554480 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 21:55:49 [error] 50223#0: *554480 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 21:55:49 [error] 50223#0: *554480 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/16 22:55:49 [error] 50223#0: *558200 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 22:55:49 [error] 50223#0: *558200 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 22:55:49 [error] 50223#0: *558200 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/16 23:55:49 [error] 50223#0: *561921 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 23:55:49 [error] 50223#0: *561921 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/16 23:55:49 [error] 50223#0: *561921 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/17 00:55:49 [error] 50223#0: *565641 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 00:55:49 [error] 50223#0: *565641 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 00:55:49 [error] 50223#0: *565641 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/17 01:55:49 [error] 50223#0: *569361 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 01:55:49 [error] 50223#0: *569361 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 01:55:49 [error] 50223#0: *569361 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/17 02:55:49 [error] 50223#0: *573082 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 04:55:49 [error] 50223#0: *580515 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 04:55:49 [error] 50223#0: *580515 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 04:55:49 [error] 50223#0: *580515 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/17 05:55:49 [error] 50223#0: *584236 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 05:55:49 [error] 50223#0: *584236 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 05:55:49 [error] 50223#0: *584236 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/17 06:55:49 [error] 50223#0: *587956 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 07:55:49 [error] 50223#0: *591678 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 07:55:49 [error] 50223#0: *591678 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 07:55:49 [error] 50223#0: *591678 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/17 08:55:49 [error] 50223#0: *595398 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 10:55:49 [error] 50223#0: *602841 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 10:55:49 [error] 50223#0: *602841 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 10:55:49 [error] 50223#0: *602841 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/17 11:55:49 [error] 50223#0: *606567 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 12:55:49 [error] 50223#0: *610289 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 12:55:49 [error] 50223#0: *610289 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 12:55:49 [error] 50223#0: *610289 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/17 13:55:49 [error] 50223#0: *614009 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 13:55:49 [error] 50223#0: *614009 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 13:55:49 [error] 50223#0: *614009 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/17 14:55:49 [error] 50223#0: *617729 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 14:55:49 [error] 50223#0: *617729 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 14:55:49 [error] 50223#0: *617729 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/17 15:55:49 [error] 50223#0: *621453 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 15:55:49 [error] 50223#0: *621453 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 15:55:49 [error] 50223#0: *621453 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/17 16:34:12 [notice] 50222#0: signal 15 (SIGTERM) received, exiting
+2017/08/17 16:34:13 [notice] 50223#0: exiting
+2017/08/17 16:34:13 [notice] 50222#0: signal 15 (SIGTERM) received, exiting
+2017/08/17 16:34:13 [notice] 50223#0: signal 15 (SIGTERM) received, exiting
+2017/08/17 16:34:13 [notice] 50222#0: signal 14 (SIGALRM) received
+2017/08/17 16:34:13 [notice] 50222#0: signal 14 (SIGALRM) received
+2017/08/17 16:34:13 [notice] 50223#0: exit
+2017/08/17 16:34:13 [notice] 50222#0: signal 17 (SIGCHLD) received
+2017/08/17 16:34:13 [notice] 50222#0: worker process 50223 exited with code 0
+2017/08/17 16:34:13 [notice] 50222#0: exit
+2017/08/17 16:34:44 [notice] 26745#0: using the "epoll" event method
+2017/08/17 16:34:44 [notice] 26745#0: openresty/1.11.2.2
+2017/08/17 16:34:44 [notice] 26745#0: built by gcc 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) 
+2017/08/17 16:34:44 [notice] 26745#0: OS: Linux 3.10.0-514.26.2.el7.x86_64
+2017/08/17 16:34:44 [notice] 26745#0: getrlimit(RLIMIT_NOFILE): 1024:4096
+2017/08/17 16:34:44 [notice] 26752#0: start worker processes
+2017/08/17 16:34:44 [notice] 26752#0: start worker process 26753
+2017/08/17 16:34:44 [notice] 26753#0: signal 17 (SIGCHLD) received
+2017/08/17 16:34:44 [notice] 26753#0: signal 17 (SIGCHLD) received
+2017/08/17 16:34:45 [notice] 26753#0: signal 17 (SIGCHLD) received
+2017/08/17 16:34:45 [notice] 26753#0: signal 17 (SIGCHLD) received
+2017/08/17 16:34:47 [warn] 26753#0: *7 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:34:50 [warn] 26753#0: *11 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:34:53 [warn] 26753#0: *15 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:34:56 [warn] 26753#0: *19 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:34:59 [warn] 26753#0: *23 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:02 [warn] 26753#0: *27 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:05 [warn] 26753#0: *31 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:08 [warn] 26753#0: *35 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:11 [warn] 26753#0: *39 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:14 [warn] 26753#0: *44 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:17 [warn] 26753#0: *48 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:17 [error] 26753#0: *50 recv() failed (111: Connection refused), client: 10.64.16.35, server: kong, request: "GET /api/hai HTTP/1.1", host: "10.155.16.33"
+2017/08/17 16:35:20 [warn] 26753#0: *58 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:23 [warn] 26753#0: *62 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:26 [warn] 26753#0: *66 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:29 [warn] 26753#0: *70 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:32 [warn] 26753#0: *74 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:35 [warn] 26753#0: *78 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:38 [warn] 26753#0: *82 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:41 [warn] 26753#0: *86 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 16:35:44 [warn] 26753#0: *91 [lua] cluster.lua:767: execute(): [lua-cassandra] Aggregation query used without partition key, context: ngx.timer
+2017/08/17 17:34:44 [error] 26753#0: *3746 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 19:34:44 [error] 26753#0: *11189 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 19:34:44 [error] 26753#0: *11189 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 19:34:44 [error] 26753#0: *11189 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/17 20:34:44 [error] 26753#0: *14911 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 20:34:44 [error] 26753#0: *14911 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 20:34:44 [error] 26753#0: *14911 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/17 21:34:44 [error] 26753#0: *18632 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 21:34:44 [error] 26753#0: *18632 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 21:34:44 [error] 26753#0: *18632 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/17 22:34:44 [error] 26753#0: *22352 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 23:34:44 [error] 26753#0: *26074 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 23:34:44 [error] 26753#0: *26074 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/17 23:34:44 [error] 26753#0: *26074 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/18 00:34:44 [error] 26753#0: *29794 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 01:34:44 [error] 26753#0: *33516 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 01:34:44 [error] 26753#0: *33516 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 01:34:44 [error] 26753#0: *33516 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/18 02:34:44 [error] 26753#0: *37236 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 02:34:44 [error] 26753#0: *37236 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 02:34:44 [error] 26753#0: *37236 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/18 03:34:44 [error] 26753#0: *40952 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 03:34:44 [error] 26753#0: *40952 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 03:34:44 [error] 26753#0: *40952 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/18 04:34:44 [error] 26753#0: *44666 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 05:34:44 [error] 26753#0: *48387 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 05:34:44 [error] 26753#0: *48387 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 05:34:44 [error] 26753#0: *48387 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/18 06:34:44 [error] 26753#0: *52108 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 06:34:44 [error] 26753#0: *52108 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 06:34:44 [error] 26753#0: *52108 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/18 07:34:44 [error] 26753#0: *55828 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 08:34:44 [error] 26753#0: *59550 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 08:34:44 [error] 26753#0: *59550 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 08:34:44 [error] 26753#0: *59550 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/18 09:34:44 [error] 26753#0: *63270 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 09:34:44 [error] 26753#0: *63270 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 09:34:44 [error] 26753#0: *63270 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/18 10:34:44 [error] 26753#0: *66991 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 10:34:44 [error] 26753#0: *66991 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 10:34:44 [error] 26753#0: *66991 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/18 11:34:44 [error] 26753#0: *70711 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 11:34:44 [error] 26753#0: *70711 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 11:34:44 [error] 26753#0: *70711 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/18 12:34:44 [error] 26753#0: *74450 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 12:34:44 [error] 26753#0: *74450 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 12:34:44 [error] 26753#0: *74450 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/18 13:34:44 [error] 26753#0: *78170 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 13:34:44 [error] 26753#0: *78170 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 13:34:44 [error] 26753#0: *78170 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/18 14:34:44 [error] 26753#0: *81891 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 14:34:44 [error] 26753#0: *81891 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 14:34:44 [error] 26753#0: *81891 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/18 15:34:44 [error] 26753#0: *85611 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 17:34:44 [error] 26753#0: *93057 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 17:34:44 [error] 26753#0: *93057 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 17:34:44 [error] 26753#0: *93057 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/18 18:34:44 [error] 26753#0: *96778 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 18:34:44 [error] 26753#0: *96778 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/18 18:34:44 [error] 26753#0: *96778 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/18 19:34:44 [error] 26753#0: *100498 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 00:34:44 [error] 26753#0: *119104 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 00:34:44 [error] 26753#0: *119104 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 00:34:44 [error] 26753#0: *119104 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/19 01:34:44 [error] 26753#0: *122825 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 01:34:44 [error] 26753#0: *122825 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 01:34:44 [error] 26753#0: *122825 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/19 02:34:44 [error] 26753#0: *126545 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 04:34:44 [error] 26753#0: *133977 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 04:34:44 [error] 26753#0: *133977 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 04:34:44 [error] 26753#0: *133977 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/19 05:34:44 [error] 26753#0: *137697 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 08:34:44 [error] 26753#0: *148862 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 08:34:44 [error] 26753#0: *148862 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 08:34:44 [error] 26753#0: *148862 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/19 09:34:44 [error] 26753#0: *152594 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 09:34:44 [error] 26753#0: *152594 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 09:34:44 [error] 26753#0: *152594 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/19 10:34:44 [error] 26753#0: *156315 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 12:34:44 [error] 26753#0: *163764 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 12:34:44 [error] 26753#0: *163764 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 12:34:44 [error] 26753#0: *163764 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/19 13:34:44 [error] 26753#0: *167493 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 14:34:44 [error] 26753#0: *171221 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 14:34:44 [error] 26753#0: *171221 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 14:34:44 [error] 26753#0: *171221 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/19 15:34:44 [error] 26753#0: *174941 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 15:34:44 [error] 26753#0: *174941 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 15:34:44 [error] 26753#0: *174941 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/19 16:34:44 [error] 26753#0: *178662 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 16:34:44 [error] 26753#0: *178662 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 16:34:44 [error] 26753#0: *178662 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/19 17:34:44 [error] 26753#0: *182382 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 20:34:44 [error] 26753#0: *193550 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 20:34:44 [error] 26753#0: *193550 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 20:34:44 [error] 26753#0: *193550 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/19 21:34:44 [error] 26753#0: *197269 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 22:34:44 [error] 26753#0: *200990 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 22:34:44 [error] 26753#0: *200990 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/19 22:34:44 [error] 26753#0: *200990 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/19 23:34:44 [error] 26753#0: *204711 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 00:34:44 [error] 26753#0: *208432 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 00:34:44 [error] 26753#0: *208432 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 00:34:44 [error] 26753#0: *208432 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/20 01:34:44 [error] 26753#0: *212153 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 02:34:44 [error] 26753#0: *215874 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 02:34:44 [error] 26753#0: *215874 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 02:34:44 [error] 26753#0: *215874 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/20 03:34:44 [error] 26753#0: *219595 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 05:34:44 [error] 26753#0: *227025 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 05:34:44 [error] 26753#0: *227025 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 05:34:44 [error] 26753#0: *227025 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/20 06:34:44 [error] 26753#0: *230746 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 06:34:44 [error] 26753#0: *230746 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 06:34:44 [error] 26753#0: *230746 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/20 07:34:44 [error] 26753#0: *234466 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 07:34:44 [error] 26753#0: *234466 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 07:34:44 [error] 26753#0: *234466 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/20 08:34:44 [error] 26753#0: *238187 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 08:34:44 [error] 26753#0: *238187 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 08:34:44 [error] 26753#0: *238187 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/20 09:34:44 [error] 26753#0: *241907 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 10:34:44 [error] 26753#0: *245632 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 10:34:44 [error] 26753#0: *245632 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 10:34:44 [error] 26753#0: *245632 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/20 11:34:44 [error] 26753#0: *249352 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 11:34:44 [error] 26753#0: *249352 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 11:34:44 [error] 26753#0: *249352 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/20 12:34:44 [error] 26753#0: *253073 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 12:34:44 [error] 26753#0: *253073 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 12:34:44 [error] 26753#0: *253073 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/20 13:34:44 [error] 26753#0: *256793 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 15:34:44 [error] 26753#0: *264236 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 15:34:44 [error] 26753#0: *264236 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 15:34:44 [error] 26753#0: *264236 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/20 16:34:44 [error] 26753#0: *267959 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 16:34:44 [error] 26753#0: *267959 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 16:34:44 [error] 26753#0: *267959 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: failed to receive reply from UDP server 10.2.1.2:53: connection refused, context: ngx.timer
+2017/08/20 17:34:44 [error] 26753#0: *271680 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 18:34:44 [error] 26753#0: *275404 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 18:34:44 [error] 26753#0: *275404 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 18:34:44 [error] 26753#0: *275404 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/20 19:34:44 [error] 26753#0: *279125 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 20:34:44 [error] 26753#0: *282847 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 20:34:44 [error] 26753#0: *282847 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/20 20:34:44 [error] 26753#0: *282847 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/20 21:34:44 [error] 26753#0: *286565 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 00:34:44 [error] 26753#0: *297729 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 00:34:44 [error] 26753#0: *297729 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 00:34:44 [error] 26753#0: *297729 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/21 01:34:44 [error] 26753#0: *301453 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 02:34:44 [error] 26753#0: *305174 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 02:34:44 [error] 26753#0: *305174 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 02:34:44 [error] 26753#0: *305174 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/21 03:34:44 [error] 26753#0: *308895 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 04:34:44 [error] 26753#0: *312608 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 04:34:44 [error] 26753#0: *312608 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 04:34:45 [error] 26753#0: *312608 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/21 05:34:44 [error] 26753#0: *316328 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 06:34:44 [error] 26753#0: *320050 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 06:34:44 [error] 26753#0: *320050 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 06:34:44 [error] 26753#0: *320050 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer
+2017/08/21 07:34:44 [error] 26753#0: *323770 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 08:34:44 [error] 26753#0: *327492 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 08:34:44 [error] 26753#0: *327492 recv() failed (111: Connection refused), context: ngx.timer
+2017/08/21 08:34:44 [error] 26753#0: *327492 [lua] reports.lua:49: log(): [reports] could not set peer name for UDP socket: [toip() name lookup failed]: dns query returned no results, context: ngx.timer

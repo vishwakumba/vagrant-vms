@@ -1,0 +1,40 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+unless Vagrant.has_plugin?("oscar")
+  raise 'oscar plugin is not installed! Run: vagrant plugin install oscar'
+end
+
+servers = JSON.parse(File.read(File.join(File.dirname(__FILE__), 'servers.json')))
+
+Vagrant.configure(2) do |config|
+  config.ssh.insert_key = false
+  config.vm.box = 'puppetlabs/centos-7.2-64-nocm'
+
+  config.vm.provision :hosts do |entries|
+    servers.each do |server|
+      entries.add_host server['ip'], [ server['hostname'] ]
+    end
+  end
+
+  config.vm.provider "virtualbox" do |vb|
+     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+  end
+
+  config.vm.provision "shell" do |vb|
+    vb.path = "add-hosts.sh"
+  end
+    
+  servers.each do |server|
+    config.vm.define server['name'] do |node|
+      node.vm.hostname = server['hostname']
+      node.vm.provider "virtualbox" do |v|
+        v.customize ["modifyvm", :id, "--memory", server['mem']]
+        v.customize ["modifyvm", :id, "--cpus", server['cpu']]
+      end
+      node.vm.network :private_network, ip: server['ip']
+      node.vm.provision "shell", inline: "systemctl restart network"
+    end
+  end
+
+end

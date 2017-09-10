@@ -1,0 +1,9 @@
+DVb8mNGsJ9SAfO9geaG99TtlUXboojYhv9oUV4mUduLLiahvkWXs7q7hnBI5UWlJ
+
+The above is the API Key for Nagios Server installed tody 11.08.17, in Vagrant.
+
+login : nagiosadmin
+pwd : vishwa
+
+email : vishwa.dwp@gmail.com
+

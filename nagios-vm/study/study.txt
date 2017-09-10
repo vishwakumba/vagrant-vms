@@ -1,0 +1,44 @@
+vishwa.kumba@vishwa-macbook:tmp$ curl -XGET "http://mynagios/nagiosxi/api/v1/system/status?apikey=BZpYdTJ8DrmMBHHbpcHZbe3RV5vGJtLgsauZju7WfMIQJGhoRfIiMKpH5ej4Lkkd&pretty=1"
+{
+    "instance_id": "1",
+    "instance_name": "localhost",
+    "status_update_time": "2017-05-28 23:11:13",
+    "program_start_time": "2017-05-28 22:50:43",
+    "program_run_time": "1230",
+    "program_end_time": "0000-00-00 00:00:00",
+    "is_currently_running": "1",
+    "process_id": "30985",
+    "daemon_mode": "1",
+    "last_command_check": "1970-01-01 01:00:00",
+    "last_log_rotation": "1970-01-01 01:00:00",
+    "notifications_enabled": "1",
+    "active_service_checks_enabled": "1",
+    "passive_service_checks_enabled": "1",
+    "active_host_checks_enabled": "1",
+    "passive_host_checks_enabled": "1",
+    "event_handlers_enabled": "1",
+    "flap_detection_enabled": "1",
+    "process_performance_data": "1",
+    "obsess_over_hosts": "0",
+    "obsess_over_services": "0",
+    "modified_host_attributes": "0",
+    "modified_service_attributes": "0",
+    "global_host_event_handler": "xi_host_event_handler",
+    "global_service_event_handler": "xi_service_event_handler"
+}
+
+
+curl -XGET "http://mynagios/nagiosxi/api/v1/objects/hoststatus?apikey=BZpYdTJ8DrmMBHHbpcHZbe3RV5vGJtLgsauZju7WfMIQJGhoRfIiMKpH5ej4Lkkd&pretty=1"
+
+grep display_name 
+grep status-text
+
+curl -XGET "http://mynagios/nagiosxi/api/v1/objects/servicestatus?apikey=BZpYdTJ8DrmMBHHbpcHZbe3RV5vGJtLgsauZju7WfMIQJGhoRfIiMKpH5ej4Lkkd&pretty=1" 
+
+####################################################################################################################################################
+Note : For Production, use http instead of https!
+
+curl -XGET "http://prod-nagios/nagiosxi/api/v1/objects/hoststatus?apikey=gJl5mvAQ0Xk0VfeHGCtlVuRJEElD8I7nHrLjhhaBftBa358IGE3SpaB3NcVUT2BB&pretty=1" 
+
+curl -XGET "http://prod-nagios/nagiosxi/api/v1/objects/servicestatus?apikey=gJl5mvAQ0Xk0VfeHGCtlVuRJEElD8I7nHrLjhhaBftBa358IGE3SpaB3NcVUT2BB&pretty=1" 
+

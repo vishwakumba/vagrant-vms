@@ -1,0 +1,39 @@
+curl -u vish:vishwa00 http://myjira-centos:8080/rest/api/latest/issue/CUPCAKE-10
+
+$ echo -n "vish:vishwa00" | base64
+dmlzaDp2aXNod2EwMA==
+
+Note : This works!
+curl -H "Authorization: Basic dmlzaDp2aXNod2EwMA==" -I http://myjira-centos:8080/rest/api/latest/issue/CUPCAKE-10
+
+echo vish:vishwa00 | openssl base64
+
+2.  Cookies
+
+http://jira.example.com:8090/jira/rest/auth/1/session
+
+curl -X POST -H "Content-Type:application/json" -d '{ "username": "vish", "password":sion -va00" }' http://myjira-centos:8080/rest/auth/1/sess
+
+Note: This works! (there is no need to -X POST, because it is inferred!)
+curl -H "Content-Type:application/json" -d '{ "username": "vish", "password": "vishwa00" }' http://myjira-centos:8080/rest/auth/1/session -v
+
+Using a file: 
+curl -H "Content-Type:application/json" -d @login.json http://myjira-centos:8080/rest/auth/1/session -v
+
+$ cat login.json
+{ "username": "vish", "password": "vishwa00" }
+
+3. Get the details about a project..
+
+curl -H "Authorization: Basic dmlzaDp2aXNod2EwMA==" -H "Content-Type:application/json" -d @search.json http://myjira-centos:8080/rest/api/latest/search -v
+
+############################################################################
+
+https://jira.dwp.gov.uk/rest/agile/1.0/sprint/2522
+
+{"id":2522,"self":"https://jira.dwp.gov.uk/rest/agile/1.0/sprint/2522","state":"active","name":"PB Sprint 1","startDate":"2017-05-17T13:39:27.309+01:00","endDate":"2017-05-30T13:39:00.000+01:00","originBoardId":417}
+
+https://jira.dwp.gov.uk/rest/agile/1.0/board/417/sprint?state=active
+
+{"maxResults":50,"startAt":0,"isLast":true,"values":[{"id":2522,"self":"https://jira.dwp.gov.uk/rest/agile/1.0/sprint/2522","state":"active","name":"PB Sprint 1","startDate":"2017-05-17T13:39:27.309+01:00","endDate":"2017-05-30T13:39:00.000+01:00","originBoardId":417}]}
+

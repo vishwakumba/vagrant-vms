@@ -1,0 +1,18 @@
+AcceptEnv LANG LC_*
+ChallengeResponseAuthentication no
+GSSAPIAuthentication no
+PermitRootLogin yes
+PrintMotd no
+#Subsystem sftp /usr/libexec/openssh/sftp-server
+UseDNS no
+UsePAM yes
+X11Forwarding yes
+
+########################################################################
+Subsystem sftp internal-sftp
+    
+Match Group super-heroes  
+  ChrootDirectory /super-heroes-work
+  AllowTCPForwarding no
+  X11Forwarding no
+  ForceCommand internal-sftp

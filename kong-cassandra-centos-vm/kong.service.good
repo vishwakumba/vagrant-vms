@@ -1,0 +1,10 @@
+[Unit]
+Description=Kong Service
+
+[Service]
+Type=forking
+ExecStart=/usr/local/kong/kong-manager.sh start
+ExecStop=/usr/local/kong/kong-manager.sh stop
+
+[Install]
+WantedBy=multi-user.target
