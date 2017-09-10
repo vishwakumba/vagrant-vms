@@ -1,0 +1,7 @@
+---
+role : role::node::rabbitmq
+
+#profile::component::rabbitmq::vhost : 'gysp_vhost'
+#profile::component::rabbitmq::user : 'password123'
+#profile::component::rabbitmq::user : 'gysp'
+#profile::component::rabbitmq::password : 'password123'

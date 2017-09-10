@@ -1,0 +1,16 @@
+---
+
+profile::common::base::artifactory_url : 'http://artifactory.itsshared.net:8081'
+profile::common::base::yum_repo : 'gysp-yum'
+
+rabbitmq::repos_ensure : false
+rabbitmq::port : 5672
+rabbitmq::package_ensure : '3.6.11'
+rabbitmq::admin_enable : true
+rabbitmq::management_port : 15672
+
+profile::component::rabbitmq::user : 'gysp_user'
+profile::component::rabbitmq::password : 'password123'
+profile::component::rabbitmq::vhost : 'gysp_vhost'
+profile::component::rabbitmq::admin_user : 'admin'
+profile::component::rabbitmq::admin_password : 'password123'
