@@ -1,0 +1,12 @@
+[Unit]
+Description=Super Cake Service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/super/cake-manager.sh start
+ExecStop=/usr/local/super/cake-manager.sh stop 
+
+[Install]
+WantedBy=multi-user.target

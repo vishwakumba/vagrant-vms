@@ -1,0 +1,13 @@
+[Unit]
+Description=Super Bakery Service
+Wants=network-online.target
+Requires=cake.service donut.service
+After=network-online.target cake.service donut.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/super/bakery-manager.sh start
+ExecStop=/usr/local/super/bakery-manager.sh stop 
+
+[Install]
+WantedBy=multi-user.target

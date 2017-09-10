@@ -1,0 +1,12 @@
+[Unit]
+Description=Super Donut Service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/super/donut-manager.sh start
+ExecStop=/usr/local/super/donut-manager.sh stop 
+
+[Install]
+WantedBy=multi-user.target
