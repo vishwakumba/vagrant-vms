@@ -1,0 +1,27 @@
+Vagrant.configure("2") do |config|
+  config.ssh.insert_key = false
+  config.vm.box = 'puppetlabs/centos-7.2-64-nocm'
+
+  config.vm.define "mycentos" 
+  config.vm.hostname = "mycentos.myworld.net"
+
+  config.vm.network "private_network", ip: "192.168.150.150"
+  config.vm.provision "shell", inline: "sed -i -e 's/^SELINUX=.*/SELINUX=enforcing/' /etc/selinux/config"
+  config.vm.provision "shell", inline: "systemctl restart network"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 512 
+    vb.cpus = 1 
+    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+   end
+
+  config.vm.provision "shell", inline: <<-SHELL
+    echo "Hello, Welcome to your new CentOS Yum Repo VM" 
+SHELL
+
+  config.vm.provision "shell" do |s|
+    s.path = "install-yum-repo.sh"
+  end
+
+end
+
