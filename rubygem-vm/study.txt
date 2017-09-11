@@ -1,0 +1,19 @@
+http://help.rubygems.org/kb/rubygems/installing-gems-with-no-network
+
+If you have no network connection or are behind a very restrictive firewall you may find it difficult to install gems.
+
+Downloading and installing gems
+
+Here is how you work around this problem, provided you have an alternate way of moving the files.
+Install the gems on an internet-connected computer to a temporary directory. Since we're only interested in the files, also disable documentation generation:
+
+$ gem install rails -i repo --no-rdoc --no-ri
+RubyGems has downloaded all the .gem files and placed them in gems/cache. Copy this directory to a USB drive or use a secure network to transfer it:
+
+$ cp -r repo/cache /path/to/USB_drive/gems
+Install the gems on the destination machine from the local files:
+
+$ cd /path/to/USB_drive/gems
+$ gem install --force --local *.gem
+
+

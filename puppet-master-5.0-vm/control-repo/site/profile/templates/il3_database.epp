@@ -1,0 +1,3 @@
+il3.database.password=<%= hiera('IL3_DATABASE_PASSWORD') %>
+
+il3.database.password_1000=<%= $password_1000 %>

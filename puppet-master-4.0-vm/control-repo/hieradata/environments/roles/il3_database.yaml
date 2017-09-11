@@ -1,0 +1,13 @@
+---
+role : roles::node::il3_database
+
+IL3_DATABASE_PASSWORD: >
+    ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEw
+    DQYJKoZIhvcNAQEBBQAEggEAn/e6DDelCuMgH1C3PhFpJxgxu/Aa2y8sgykq
+    hslFXcgrTU298yPkvJNxDXrVbypnkDLJgGJyGLoJJmLeJLTotRYn9re6s4d5
+    mG2p/H/Vqpx0JyyHM/0czl4xNzHuwRgAybKRRjObKbPy0oNQ9uj+tFUiteDT
+    jRAHv0A672DItrUntMfGg9VmEz4V4mP7W0vKllJL9UKkXQ8bjCtRrxhmEhG6
+    ZVZD3t/tMVH0g6cqhJrLgSPgqwNAljNg91AGVwTLNFOqTkxSGzA5I2AvStsY
+    xubIIspwxGOx5lu3wfpyw1i73Qfa9kIoJlHiEuSfv3xU7nlSRiwvufrTKVYc
+    2JMcTDA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBDjPCtSyd6QvgMy9gzH
+    Gj1fgBA4lpeexTbDohhdS7DJqgav]

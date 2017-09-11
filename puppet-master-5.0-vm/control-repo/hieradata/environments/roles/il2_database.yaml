@@ -1,0 +1,4 @@
+---
+role : roles::node::il2_database
+
+IL2_DATABASE_PASSWORD : 'I am IL2!'

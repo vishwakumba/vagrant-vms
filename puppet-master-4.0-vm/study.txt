@@ -1,0 +1,21 @@
+[root@mymaster4 ~]# puppetserver gem install hiera-eyaml
+Fetching: highline-1.6.21.gem (100%)
+Successfully installed highline-1.6.21
+Fetching: trollop-2.1.2.gem (100%)
+Successfully installed trollop-2.1.2
+Fetching: hiera-eyaml-2.1.0.gem (100%)
+Successfully installed hiera-eyaml-2.1.0
+3 gems installed
+
+
+[root@mymaster4 bin]# /vagrant/install-hiera-eyaml.sh 
+sudo /opt/puppetlabs/puppet/bin/gem install hiera-eyaml --no-doc --no-ri
+Fetching: highline-1.6.21.gem (100%)
+Successfully installed highline-1.6.21
+Fetching: trollop-2.1.2.gem (100%)
+Successfully installed trollop-2.1.2
+Fetching: hiera-eyaml-2.1.0.gem (100%)
+Successfully installed hiera-eyaml-2.1.0
+3 gems installed
+Done
+

@@ -1,0 +1,1 @@
+il2.database.password=<%= hiera('IL2_DATABASE_PASSWORD') %>
